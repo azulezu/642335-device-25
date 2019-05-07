@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Анна Зуева](https://up.htmlacademy.ru/htmlcss/25/user/642335).
-* Наставник: `Неизвестно`.
+* Наставник: [Максим Фарига] (https://htmlacademy.ru/profile/maximfariga).
 
 ---
 

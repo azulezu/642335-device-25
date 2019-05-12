@@ -1,0 +1,31 @@
+body {
+	min-width: 1040px;
+	padding: 10px 30px;
+
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	color: black;
+	background-color: white;
+}
+
+footer, main, header, section {
+  margin-bottom: 20px;
+}
+
+header{
+  background-color: khaki;
+}
+
+footer{
+  background-color: dimgray;
+  color: white;
+}
+
+a {
+	color: black;
+}
+
+footer a {
+	color: white;
+}

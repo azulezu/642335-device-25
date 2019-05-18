@@ -72,7 +72,20 @@
 
     <section class="filters">
       <h3 class="filters-title">Фильтр:</h3>
-      <form id="filters-form" action="http://echo.htmlacademy.ru" method="post">
+      <form action="http://echo.htmlacademy.ru" method="post" oninput="min_output.value=price_min.value; max_output.value=price_max.value">
+
+        <fieldset class="price-range">
+          <legend>Стоимость</legend>
+              <input class="price-min price-control" id="price-min" type="number" name="price_min" min="0" step="1" value="0">
+              <input class="price-max price-control" id="price-max" type="number" name="price_max" min="0" step="1" value="5000">
+              <div class="price-range-description">
+                <label for="min-output" class="price-output">от </label>
+                <output id="min-output" name="min_output" ></output>
+                <label for="max-output" class="price-output">до </label>
+                <output id="max-output" name="max_output" ></output>
+              </div>
+        </fieldset>
+
         <fieldset class="colors">
           <legend>Цвет</legend>
           <p>
@@ -96,6 +109,7 @@
             <label for="color-5">Розовый</label>
           </p>
         </fieldset>
+
         <fieldset class="bluetooth">
           <legend>Bluetooth</legend>
           <p>

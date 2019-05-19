@@ -4,7 +4,7 @@ body {
 
 	font-family: 'Open Sans', Arial, sans-serif;
 	font-size: 14px;
-  line-height: 24px;
+	line-height: 24px;
 	color: black;
 	background-color: white;
 }
@@ -29,3 +29,45 @@ a {
 footer a {
 	color: white;
 }
+
+/*  Стили для проверки слайдера  */
+/*
+.promo-slider {
+  margin-left: 450px;
+  width: 450px;
+  position: relative;
+  background-color: cornsilk;
+}
+
+.promo-controls {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.promo-slide {
+  float: left;
+  width: 450px;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.promo-wrapper {
+  width: 300%;
+  transition: transform 0.8s ease;
+}
+
+#promo-btn-1:checked ~ .promo-inner .promo-wrapper {
+  transform: translate(0);
+}
+#promo-btn-2:checked ~ .promo-inner .promo-wrapper {
+  transform: translate(-450px);
+}
+#promo-btn-3:checked ~ .promo-inner .promo-wrapper {
+  transform: translate(-900px);
+}
+*/

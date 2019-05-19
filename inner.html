@@ -121,7 +121,7 @@
             <label for="bluetooth-2">Нет</label>
           </p>
         </fieldset>
-        <input type="submit" class="btn" value="Показать">
+        <button class="btn" type="submit">Показать</button>
       </form>
     </section> <!-- filters -->
 
@@ -129,12 +129,14 @@
       <div class="sorter">
         <h3 class="sorter-title">Сортировка:</h3>
         <ul class="order-list">
-          <li class="order-item current"><a href="#">По цене</a></li>
+          <li class="order-item current"><a>По цене</a></li>
           <li class="order-item"><a href="#">По типу</a></li>
           <li class="order-item"><a href="#">По популярности</a></li>
         </ul>
-        <a class="sorter-arrow arrow-down" href="#">по убыванию</a>
-        <a class="sorter-arrow arrow-up current" href="#">по возрастанию</a>
+        <ul class="sorter-controls">
+          <li class="sorter-arrow arrow-up"><a href="#">по убыванию</a></li>
+          <li class="sorter-arrow arrow-down current"><a>по возрастанию</a></li>
+        </ul>
       </div> <!-- sorter -->
 
       <h3 class="catalog-list visually-hidden">Выбранные товары:</h3>

@@ -14,11 +14,12 @@ footer, main, header, section {
 }
 
 header{
-  background-color: khaki;
+ background-color: rgb(247, 225, 132);
+
 }
 
 footer{
-  background-color: dimgray;
+  background-color: rgb(70, 70, 70);
   color: white;
 }
 
@@ -29,6 +30,74 @@ a {
 footer a {
 	color: white;
 }
+
+.btn {
+ /* background-color: rgb(248, 245, 190);
+  background-color: rgb(247, 243, 170);
+  background-color: rgb(248, 245, 190);
+*/
+  background-color: rgb(240, 197, 46);
+}
+
+.goodsgroups-item-pic-wrapper {
+  width: 160px;
+  height: 160px;
+  /* background-color: rgba(250, 249, 212, 0.5); */
+  /* background-color: rgba(247, 246, 150, 1); */
+  background-color: rgba(240, 197, 46, 0.5);
+  text-align: center;
+}
+
+.service-slider {
+    background-color: rgb(229, 229, 229);
+}
+
+.site-footer {
+    background-color: rgb(70, 70, 70);
+    color: rgb(255, 198, 0);
+}
+
+.sorter {
+    background-color: rgb(235, 235, 235);
+}
+
+.filters {
+    background-color: rgb(239, 239, 239);
+}
+
+.filters-title {
+    background-color: rgb(220, 220, 220);
+}
+
+.price-range-line {
+/*  background-color: rgb(12, 12, 12);
+  background-color: rgb(240, 197, 46);
+*/
+  background-color: rgb(145, 201, 47);
+}
+
+.paginator {
+  background-color: rgb(239, 239, 239);
+}
+
+.service-info {
+  padding-left: 200px;
+  min-height: 195px;
+  background-repeat: no-repeat;
+}
+
+.delivery .service-info{
+  background-image: url("../img/mainpage/delivery.svg");
+}
+
+.warranty .service-info{
+  background-image: url("../img/mainpage/warranty.svg");
+}
+
+.credit .service-info{
+  background-image: url("../img/mainpage/credit.svg");
+}
+
 
 /*  Стили для проверки слайдера  */
 /*

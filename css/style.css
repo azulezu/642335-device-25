@@ -80,6 +80,42 @@ footer a {
   background-color: rgb(239, 239, 239);
 }
 
+/* ------------------------------------ */
+/*  Стили для пропуска навигации        */
+/*  www.w3.org/TR/WCAG20-TECHS/G1.html  */
+/* ------------------------------------ */
+
+
+a.goto-main {
+    left: -999px;
+    position: absolute;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    z-index: -999;
+}
+
+a.goto-main:focus {
+    left: auto;
+    top: 20px;
+    width: auto;
+    height: auto;
+    overflow: auto;
+
+    margin: auto;
+    padding: 10px;
+    font-size: inherit;
+    text-align: center;
+    background-color: rgb(247, 225, 132);
+    color: black;
+    outline: 2px solid black;
+    z-index: 999;
+}
+
+/* ------------------- */
+
+
 .service-info {
   padding-left: 200px;
   min-height: 195px;

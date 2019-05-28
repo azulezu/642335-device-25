@@ -10,26 +10,28 @@
   <body>
 
     <header class="site-header">
-      <h1 class="visually-hidden">Магазин электронных гаджетов «Device»</h1>
+      <h1 class="visually-hidden">Магазин электронных гаджетов <span lang="en">«Device»</span></h1>
+      <a class="goto-main" href="#main-content">Пропустить навигацию</a>
       <div class="header-menu">
         <a class="site-logo"><img src="img/header/logo.svg" width="163" height="35" alt="Лого магазина Device" title="DEVICE"></a>
-        <form class="main-search" action="https://echo.htmlacademy.ru" method="get">
-          <input type="search" name="search" placeholder="Поиск по сайту">
+        <form class="main-search" action="https://echo.htmlacademy.ru" method="get" role="search">
+          <label class="visually-hidden" for="site-search">Поиск по сайту</label>
+          <input type="search" id="site-search" name="search" placeholder="Поиск по сайту">
           <button type="submit">Найти</button>
         </form>
 
-        <ul class="user-menu">
+        <ul class="user-menu" aria-label="Личный кабинет">
             <li class="login-link"><a href="#">Войти</a></li>
         </ul> <!-- user-menu -->
 
-        <ul class="shopping-menu">
+        <ul class="shopping-menu" aria-label="Отмеченные товары">
           <li><a class="compare" href="#">Сравнить</a></li>
           <li><a class="cart" href="#">Корзина</a></li>
         </ul> <!-- shopping-menu -->
 
         <nav class="navigation-menu">
           <ul>
-            <li>
+            <li aria-haspopup="true">
               <a class="nav-menu-item" href="inner.html">Каталог товаров</a>
               <ul class="catalog-submenu">
                 <li class="goodsgroup-menu">
@@ -65,7 +67,7 @@
       </div> <!-- header-menu -->
     </header>
 
-    <main class="main-page">
+    <main class="main-page" id="main-content">
       <section class="promo-slider">
         <h2 class="promo-title visually-hidden">Хиты</h2>
         <input class="visually-hidden" type="radio" id="promo-btn-1" name="promo-btn" checked>
@@ -88,6 +90,7 @@
                 <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
                 <a class="btn" href="inner.html">Подробнее</a>
                 <table class="promo-details">
+                  <caption class="visually-hidden">Характеристики товара</caption>
                   <tr>
                     <td>8,5 м</td>
                     <td>5 кг</td>
@@ -111,6 +114,7 @@
                 <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
                 <a class="btn" href="inner.html">Подробнее</a>
                 <table class="promo-details">
+                  <caption  class="visually-hidden">Характеристики товара</caption>
                   <tr>
                     <td>48 часов</td>
                   </tr>
@@ -130,6 +134,7 @@
                 <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру</p>
                 <a class="btn" href="inner.html">Подробнее</a>
                 <table class="promo-details">
+                  <caption  class="visually-hidden">Характеристики товара</caption>
                   <tr>
                     <td>800 м</td>
                     <td>50 м</td>
@@ -268,47 +273,75 @@
       <section class="contacts">
         <h2 class="contacts-title">Контакты</h2>
         <p class="pickup-line">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-        <div class="map">
-          <a class="map-link" href="https://goo.gl/maps/MvT8bFddePSKjq9o8" target="_blank"><img src="img/mainpage/map.png" width="560" height="222" alt="Карта проезда" title="г. Москва, ул. Строителей, 15"></a>
+        <div class="map-wrapper">
+          <a class="map-link" href="https://goo.gl/maps/MvT8bFddePSKjq9o8" target="_blank"><img src="img/mainpage/map.png" width="560" height="222" alt="Адрес офиса компании: Москва, ул. Строителей, 15" title="Москва, ул. Строителей, 15"></a>
         </div>
-        <a class="btn feedback" href="#">Напишите нам</a>
+        <a class="btn feedback-link" href="#">Напишите нам</a>
       </section> <!-- contacts -->
     </main>
 
     <footer class="site-footer">
         <a class="site-logo"><img src="img/footer/logo_yellow.svg"  width="163" height="35" alt="Лого магазина Device" title="DEVICE"></a>
-        <ul class="user-menu">
+        <ul class="user-menu"  aria-label="Личный кабинет">
             <li class="login-link"><a href="#">Войти</a></li>
         </ul>
-        <ul class="shopping-menu">
+        <ul class="shopping-menu"  aria-label="Отмеченные товары">
           <li><a class="compare" href="#">Сравнить</a></li>
           <li><a class="cart" href="#">Корзина</a></li>
         </ul>
         <p class="address-line">г. Москва, ул. Строителей, 15</p>
-        <ul class="footer-navigation-menu">
+        <!--
+        <p class="address-line" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">г. <span itemprop="addressLocality">Москва</span>, ул. <span itemprop="streetAddress">Строителей, 15</span></p>
+        -->
+        <ul class="footer-navigation-menu" >
           <li><a class="footer-nav-menu-item" href="#">Доставка</a></li>
           <li><a class="footer-nav-menu-item" href="#">Гарантия</a></li>
           <li><a class="footer-nav-menu-item" href="#">Контакты</a></li>
         </ul>
         <a class="phone-uri" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
-        <ul class="footer-social">
+        <ul class="footer-social" aria-label="Магазин Девайс в социальных сетях">
           <li><a class="social-button vk" href="https://vk.com">ВКонтакте</a></li>
           <li><a class="social-button fb" href="https://www.facebook.com">Facebook</a></li>
           <li><a class="social-button twitter" href="https://twitter.com">Twitter</a></li>
         </ul>
         <a class="footer-copyright" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/footer/logo-html_yellow.svg" width="27" height="35" alt="Лого HTML Academy" title="HTML Academy"></a>
     </footer>
-
 <!--
-<div style="display:none;">
-
-	write us
-	В свободной форме  Текст письма
-	Ваше имя:  Имя Фамилия
-	Ваш e-mail:  email@example.com
-
-</div>
+https://www.w3.org/TR/html/editing.html#inert-subtrees
 -->
+    <section class="modal feedback">
+      <h2>Написать отзыв</h2>
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="feedback-item feedback-name">
+          <label for="feedback-name">Ваше имя:</label>
+          <input id="feedback-name" type="text" name="feedback-name" value="" placeholder="Имя Фамилия">
+        </p>
+        <p class="feedback-item feedback-email">
+          <label for="feedback-email">Ваш e-mail:</label>
+          <input id="feedback-email" type="email" name="feedback-email" value="" placeholder="email@example.com">
+        </p>
+        <p class="feedback-item feedback-text">
+          <label for="feedback-text">Текст письма:</label>
+          <textarea id="feedback-text" name="feedback-text" rows="8" cols="80" placeholder="В свободной форме"></textarea>
+        </p>
+        <button class="btn feedback-button" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button">
+        <span class="visually-hidden">Закрыть окно отзыва</span>
+      </button>
+    </section> <!-- feedback -->
+
+    <section class="modal map">
+      <h2>Как до нас добраться</h2>
+      <figure>
+        <figcaption class="visually-hidden">Карта проезда</figcaption>
+        <img src="img/map-big.png" width="960" height="559" alt="Адрес офиса компании: Москва, ул. Строителей, 15">
+      </figure>
+      <button class="modal-close" type="button">
+        <span class="visually-hidden">Закрыть окно карты</span>
+      </button>
+    </section> <!-- map -->
+
 	<script src="js/script.js"></script>
   </body>
 </html>

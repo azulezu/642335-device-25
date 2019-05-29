@@ -69,19 +69,19 @@
     </header>
 
     <main class="main-page" id="main-content">
-      <section class="promo-slider">
+      <section class="promo-slider" aria-roledescription="carousel">
         <h2 class="promo-title visually-hidden">Хиты</h2>
-        <input class="visually-hidden" type="radio" id="promo-btn-1" name="promo-btn" checked>
-        <input class="visually-hidden" type="radio" id="promo-btn-2" name="promo-btn">
-        <input class="visually-hidden" type="radio" id="promo-btn-3" name="promo-btn">
+        <input class="visually-hidden" type="radio" id="promo-btn-1" name="promo-btn" aria-posinset="1" aria-setsize="3" checked>
+        <input class="visually-hidden" type="radio" id="promo-btn-2" name="promo-btn" aria-posinset="2" aria-setsize="3">
+        <input class="visually-hidden" type="radio" id="promo-btn-3" name="promo-btn" aria-posinset="3" aria-setsize="3">
         <div class="promo-controls">
-          <label class="promo-label" for="promo-btn-1"></label>
-          <label class="promo-label" for="promo-btn-2"></label>
-          <label class="promo-label" for="promo-btn-3"></label>
+          <label class="promo-label" for="promo-btn-1" aria-label="Первый слайд"></label>
+          <label class="promo-label" for="promo-btn-2" aria-label="Второй слайд"></label>
+          <label class="promo-label" for="promo-btn-3" aria-label="Последний слайд"></label>
         </div>
         <div class="promo-inner">
           <div class="promo-wrapper">
-            <div class="promo-slide slide-1">
+            <div class="promo-slide slide-1" role="group" aria-roledescription="slide" aria-labelledby="promo-btn-1">
               <span class="promo-number">01</span>
               <div class="promo-pic-wrapper">
                 <img class="promo-pic" src="img/mainpage/slider-1.png" width="384" height="486" alt="Самая длинная палка для селфи">
@@ -105,7 +105,7 @@
                 </table>
               </div>
             </div>
-            <div class="promo-slide slide-2">
+            <div class="promo-slide slide-2" role="group" aria-roledescription="slide" aria-labelledby="promo-btn-2">
               <span class="promo-number">02</span>
               <div class="promo-pic-wrapper">
                 <img class="promo-pic" src="img/mainpage/slider-2.png" width="345" height="485" alt="Мотивирующие фитнес-браслеты">
@@ -125,7 +125,7 @@
                 </table>
               </div>
             </div>
-            <div class="promo-slide slide-3">
+            <div class="promo-slide slide-3" role="group" aria-roledescription="slide" aria-labelledby="promo-btn-3">
               <span class="promo-number">03</span>
               <div class="promo-pic-wrapper">
                 <img class="promo-pic" src="img/mainpage/slider-3.png" width="526" height="334" alt="Квадрокоптер с  мощным лазером">
@@ -285,11 +285,13 @@
         <a class="site-logo"><img src="img/footer/logo_yellow.svg"  width="163" height="35" alt="Лого магазина Device" title="DEVICE"></a>
         <ul class="user-menu" aria-label="Личный кабинет">
             <li class="login-link"><a href="#">Войти</a></li>
-        </ul>
+        </ul> <!-- user-menu -->
+
         <ul class="shopping-menu" aria-label="Отмеченные товары">
           <li><a class="compare" href="#">Сравнить</a></li>
           <li><a class="cart" href="#">Корзина</a></li>
-        </ul>
+        </ul> <!-- shopping-menu -->
+
         <p class="address-line">г. Москва, ул. Строителей, 15</p>
         <!--
         <p class="address-line" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">г. <span itemprop="addressLocality">Москва</span>, ул. <span itemprop="streetAddress">Строителей, 15</span></p>

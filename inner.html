@@ -11,63 +11,70 @@
 
 <body>
   <header class="site-header">
-    <h1 class="visually-hidden">Каталог товаров магазина электронных гаджетов «Device»</h1>
+    <h1 class="visually-hidden">Каталог товаров магазина электронных гаджетов <span lang="en">«Device»</span></h1>
+    <a class="goto-main" href="#main-content">Пропустить навигацию</a>
     <div class="header-menu">
       <a class="site-logo" href="index.html"><img src="img/header/logo.svg" width="163" height="35" alt="Лого магазина Device" title="DEVICE"></a>
-      <form class="main-search" action="https://echo.htmlacademy.ru" method="get">
-        <input type="search" name="search" placeholder="Поиск по сайту">
+
+      <form class="main-search" action="https://echo.htmlacademy.ru" method="get" role="search">
+        <label class="visually-hidden" for="site-search">Поиск по сайту</label>
+        <input type="search" id="site-search" name="search" placeholder="Поиск по сайту">
         <button type="submit">Найти</button>
       </form>
-      <ul class="user-menu">
+
+      <ul class="user-menu" aria-label="Личный кабинет">
         <li><a class="login-link" href="profile.html">Валентин Петухов</a></li>
         <li><a class="login-link" href="#">Выйти</a></li>
-      </ul>
-      <ul class="shopping-menu">
+      </ul> <!-- user-menu -->
+
+      <ul class="shopping-menu" aria-label="Отмеченные товары">
         <li><a class="compare" href="#">Сравнить</a></li>
         <li><a class="cart" href="#">Корзина</a></li>
-      </ul>
+      </ul> <!-- shopping-menu -->
+
       <nav class="navigation-menu">
-        <ul>
-          <li><a class="nav-menu-item" href="inner.html">Каталог товаров</a>
-            <ul class="catalog-submenu">
+        <ul role="menubar">
+          <li><a class="nav-menu-item" href="inner.html" role="menuitem" aria-haspopup="true" aria-expanded="true" >Каталог товаров</a>
+            <ul class="catalog-submenu" role="menu">
               <li class="goodsgroup-menu">
                 <ul>
-                  <li><a class="vr-link" href="inner.html">Виртуальная реальность</a></li>
-                  <li><a class="monopods-link current">Моноподы для селфи</a></li>
-                  <li><a class="cameras-link" href="inner.html">Экшн-камеры</a></li>
+                  <li><a class="vr-link" href="inner.html" role="menuitem">Виртуальная реальность</a></li>
+                  <li aria-current="page"><a class="monopods-link current" role="menuitem">Моноподы для селфи</a></li>
+                  <li><a class="cameras-link" href="inner.html" role="menuitem">Экшн-камеры</a></li>
                 </ul>
               </li>
               <li class="goodsgroup-menu">
                 <ul>
-                  <li><a class="fitbracelets-link" href="inner.html">Фитнеc-браслеты</a></li>
-                  <li><a class="smartwatches-link" href="inner.html">Умные часы</a></li>
+                  <li><a class="fitbracelets-link" href="inner.html" role="menuitem">Фитнеc-браслеты</a></li>
+                  <li><a class="smartwatches-link" href="inner.html" role="menuitem">Умные часы</a></li>
                 </ul>
               </li>
               <li class="goodsgroup-menu">
                 <ul>
-                  <li><a class="quadcopters-link" href="inner.html">Квадрокоптеры</a></li>
+                  <li><a class="quadcopters-link" href="inner.html" role="menuitem">Квадрокоптеры</a></li>
                 </ul>
               </li>
             </ul>
           </li>
           <li class="logistic-menu">
-            <ul>
-              <li><a class="nav-menu-item" href="#">Доставка</a></li>
-              <li><a class="nav-menu-item" href="#">Гарантия</a></li>
+            <ul role="menu">
+              <li><a class="nav-menu-item" href="#" role="menuitem">Доставка</a></li>
+              <li><a class="nav-menu-item" href="#" role="menuitem">Гарантия</a></li>
             </ul>
           </li>
-          <li><a class="nav-menu-item" href="#">Контакты</a></li>
+          <li><a class="nav-menu-item" href="#" role="menuitem">Контакты</a></li>
         </ul>
-      </nav>
+      </nav> <!-- navigation-menu -->
+
     </div> <!-- header-menu -->
   </header>
 
-  <main class="catalog-page">
+  <main class="catalog-page" id="main-content">
     <h2 class="catalog-title">Моноподы для селфи</h2>
-    <ul class="breadcrumbs">
+    <ul class="breadcrumbs" aria-label="Навигация. Вы находитесь здесь">
       <li><a href="index.html">Главная</a></li>
       <li><a href="inner.html">Каталог товаров</a></li>
-      <li><a>Моноподы для селфи</a></li>
+      <li aria-current="page"><a>Моноподы для селфи</a></li>
     </ul>
 
     <section class="filters">
@@ -129,13 +136,13 @@
       <div class="sorter">
         <h3 class="sorter-title">Сортировка:</h3>
         <ul class="order-list">
-          <li class="order-item current"><a>По цене</a></li>
+          <li class="order-item current"><a aria-current="true">По цене</a></li>
           <li class="order-item"><a href="#">По типу</a></li>
           <li class="order-item"><a href="#">По популярности</a></li>
         </ul>
         <ul class="sorter-controls">
           <li class="sorter-arrow arrow-up"><a href="#">по убыванию</a></li>
-          <li class="sorter-arrow arrow-down current"><a>по возрастанию</a></li>
+          <li class="sorter-arrow arrow-down current"><a aria-current="true">по возрастанию</a></li>
         </ul>
       </div> <!-- sorter -->
 
@@ -195,10 +202,10 @@
         </li>
       </ul> <!-- catalog-list -->
 
-      <div class="paginator">
-        <a class="paginator-prev" href="#prev">Назад</a>
+      <div class="paginator" aria-label="Листать страницы">
+        <a class="paginator-prev" href="#prev" aria-disabled="true">Назад</a>
         <ul class="paginator-list">
-          <li class="paginator-item current"><a>1</a></li>
+          <li class="paginator-item current"><a aria-current="page">1</a></li>
           <li class="paginator-item"><a href="#">2</a></li>
           <li class="paginator-item"><a href="#">3</a></li>
         </ul>
@@ -210,14 +217,16 @@
 
   <footer class="site-footer">
     <a class="site-logo" href="index.html"><img src="img/footer/logo_yellow.svg"  width="163" height="35" alt="Лого магазина Device" title="DEVICE"></a>
-    <ul class="user-menu">
+    <ul class="user-menu" aria-label="Личный кабинет">
       <li><a class="login-link" href="#">Валентин Петухов</a></li>
       <li><a class="login-link" href="#">Выйти</a></li>
-    </ul>
-    <ul class="shopping-menu">
+    </ul> <!-- user-menu -->
+
+    <ul class="shopping-menu" aria-label="Отмеченные товары">
       <li><a class="compare" href="#">Сравнить</a></li>
       <li><a class="cart" href="#">Корзина</a></li>
-    </ul>
+    </ul> <!-- shopping-menu -->
+
     <p class="address-line">г. Москва, ул. Строителей, 15</p>
     <ul class="footer-navigation-menu">
       <li><a class="footer-nav-menu-item" href="#">Доставка</a></li>
@@ -225,12 +234,13 @@
       <li><a class="footer-nav-menu-item" href="#">Контакты</a></li>
     </ul>
     <a class="phone-uri" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
-    <ul class="footer-social">
+
+    <ul class="footer-social" aria-label="Магазин Девайс в социальных сетях">
       <li><a class="social-button vk" href="https://vk.com">ВКонтакте</a></li>
       <li><a class="social-button fb" href="https://www.facebook.com">Facebook</a></li>
       <li><a class="social-button twitter" href="https://twitter.com">Twitter</a></li>
     </ul>
-        <a class="footer-copyright" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/footer/logo-html_yellow.svg" width="27" height="35" alt="Лого HTML Academy" title="HTML Academy"></a>
+    <a class="footer-copyright" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/footer/logo-html_yellow.svg" width="27" height="35" alt="Лого HTML Academy" title="HTML Academy"></a>
   </footer>
 
   <script src="js/script.js"></script>

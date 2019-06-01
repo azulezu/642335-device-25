@@ -1,49 +1,236 @@
-body {
-	min-width: 1040px;
-	padding: 10px 30px;
+@font-face {
+    font-family: "Gilroy";
+    font-weight: normal;
+    font-style: normal;
+/*  NB: Postscript-имя шрифта идет между версией и копирайтом  */
+    src: local("Gilroy Light"), local("Gilroy-Light"),
+          url("../fonts/gilroy/gilroylight.woff") format("woff"),
+          url("../fonts/gilroy/gilroylight.woff") format("woff"),
+          url("../fonts/gilroy/gilroylight.ttf") format("truetype");
+}
 
-	font-family: 'Open Sans', Arial, sans-serif;
-	font-size: 14px;
-	line-height: 24px;
+@font-face {
+    font-family: "Gilroy";
+    font-weight: bold; /* 800 */
+    font-style: normal;
+    src: local("Gilroy ExtraBold"), local("Gilroy-ExtraBold"),
+          url("../fonts/gilroy/gilroyextrabold.woff2") format("woff2"),
+          url("../fonts/gilroy/gilroyextrabold.woff") format("woff"),
+          url("../fonts/gilroy/gilroyextrabold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-weight: normal; /* 300 */
+    font-style: normal;
+    src: local("Open Sans Light"), local("OpenSans-Light"),
+          url("../fonts/open_sans/opensanslight.woff2") format("woff2"),
+          url("../fonts/open_sans/opensanslight.woff") format("woff"),
+          url("../fonts/open_sans/OpenSans-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-style: normal;
+    src: local("Open Sans"), local("OpenSans"),
+          url("../fonts/opensans/opensans.woff2") format("woff2"),
+          url("../fonts/opensans/opensans.woff") format("woff"),
+          url("../fonts/opensans/OpenSans-Regular.ttf") format("truetype");
+    }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+	min-width: 1200px;
+  margin: 0;
+  padding: 0 20px;
+
+	font-family: "Open Sans", Segoe Script, serif;
+	font-size: 15px;
+	line-height: 30px;
 	color: black;
 	background-color: white;
 }
 
-footer, main, header, section {
-  margin-bottom: 20px;
+.site-header {
+ background-color: rgba(240, 197, 46, 0.5);
+ color: black;
 }
 
-header{
- background-color: rgb(247, 225, 132);
-
-}
-
-footer{
+.site-footer {
   background-color: rgb(70, 70, 70);
   color: white;
 }
 
 a {
 	color: black;
+  text-decoration: none;
 }
 
 footer a {
 	color: white;
 }
 
+.site-logo:hover, .footer-copyright:hover,
+.user-menu li:hover, .shopping-menu li:hover,
+.nav-menu-item:hover, .footer-nav-menu-item:hover,
+.goodsgroup-menu li:hover {
+  opacity: 0.6;
+}
+
+.site-logo:active, .footer-copyright:active,
+.user-menu li:active, .shopping-menu li:active,
+.nav-menu-item:active, .footer-nav-menu-item:active,
+.goodsgroup-menu li:active {
+  opacity: 0.3;
+}
+
+.user-menu, .shopping-menu,
+.address-line, .phone-uri {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: normal;
+}
+
+.goodsgroup-menu {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 36px;
+  font-weight: normal;
+}
+
+.nav-menu-item, .footer-nav-menu-item {
+  font-family: "Gilroy", Verdana, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  /*   VA / 1000 = X em   */
+  letter-spacing: 0.2em;
+}
+
+.user-menu, .shopping-menu, .navigation-menu ul,
+.footer-navigation-menu, .footer-social {
+  list-style: none;
+}
+
+.main-search input {
+  width: 356px;
+  padding: 0;
+  color: black;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  opacity: 0.3;
+}
+
+.main-search input:hover {
+  opacity: 0.6;
+}
+
+.main-search input:focus {
+  opacity: 1;
+  border-bottom: 2px solid black;
+}
+
+.main-search button {
+  display: none;
+  background-color: transparent;
+  border: 2px solid black;
+}
+
+.main-search input:focus + button {
+  display: inline-block;
+  color: black;
+  background-color: transparent;
+}
+
+.main-search input:focus + button:hover {
+  color: white;
+  background-color: black;
+}
+
+.main-search button:active, .main-search button:focus {
+  opacity: 0.3;
+}
+
+.social-button {
+  width: 32px;
+  height: 32px;
+  background-size: 32px 32px;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  display: inline-block;
+}
+
+.social-button:hover {
+  opacity: 0.6;
+}
+
+.social-button:active {
+  opacity: 0.1;
+}
+
+.social-button.fb {
+  background-image: url("../img/footer/facebook.svg");
+}
+
+.social-button.insta {
+  background-image: url("../img/footer/instagram.svg");
+}
+
+.social-button.tw {
+  background-image: url("../img/footer/twitter.svg");
+}
+
+.service-info {
+  padding-left: 200px;
+  min-height: 195px;
+  background-repeat: no-repeat;
+}
+
+.delivery .service-info{
+  background-image: url("../img/mainpage/delivery.svg");
+}
+
+.warranty .service-info{
+  background-image: url("../img/mainpage/warranty.svg");
+}
+
+.credit .service-info{
+  background-image: url("../img/mainpage/credit.svg");
+}
+
+.modal {
+  display: none;
+}
+
+/* ------------------- */
+/*
 .btn {
- /* background-color: rgb(248, 245, 190);
+  background-color: rgb(248, 245, 190);
   background-color: rgb(247, 243, 170);
   background-color: rgb(248, 245, 190);
-*/
+
   background-color: rgb(240, 197, 46);
 }
 
 .goodsgroups-item-pic-wrapper {
   width: 160px;
   height: 160px;
-  /* background-color: rgba(250, 249, 212, 0.5); */
-  /* background-color: rgba(247, 246, 150, 1); */
+  background-color: rgba(250, 249, 212, 0.5);
+  background-color: rgba(247, 246, 150, 1);
   background-color: rgba(240, 197, 46, 0.5);
   text-align: center;
 }
@@ -70,15 +257,13 @@ footer a {
 }
 
 .price-range-line {
-/*  background-color: rgb(12, 12, 12);
-  background-color: rgb(240, 197, 46);
-*/
   background-color: rgb(145, 201, 47);
 }
 
 .paginator {
   background-color: rgb(239, 239, 239);
 }
+*/
 
 /* ------------------------------------ */
 /*  Стили для пропуска навигации        */
@@ -116,26 +301,20 @@ a.goto-main:focus {
 /* ------------------- */
 
 
-.service-info {
-  padding-left: 200px;
-  min-height: 195px;
-  background-repeat: no-repeat;
+
+.brends-item-pic {
+  filter: grayscale(100%)
+          opacity(20%);
 }
 
-.delivery .service-info{
-  background-image: url("../img/mainpage/delivery.svg");
+.brends-item-pic:hover, .brends-item-pic:active {
+  filter: none;
 }
 
-.warranty .service-info{
-  background-image: url("../img/mainpage/warranty.svg");
-}
-
-.credit .service-info{
-  background-image: url("../img/mainpage/credit.svg");
-}
-
-
-/*  Стили для проверки слайдера  */
+/* ------------------------------------ */
+/*  Стили для проверки слайдера         */
+/*                                      */
+/* ------------------------------------ */
 /*
 .promo-slider {
   margin-left: 450px;

@@ -81,6 +81,30 @@ footer a {
 	color: white;
 }
 
+.btn {
+  font-family: "Gilroy", Verdana, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  text-align: center;
+  vertical-align: middle;
+  border: none;
+  color: black;
+  background-color: white;
+  background-image: linear-gradient(white 33%, rgb(240, 197, 46) 33%, rgb(240, 197, 46) 66%, white 66%);
+}
+
+.btn:hover {
+  background-color: rgb(240, 197, 46);
+  background-image: none;
+}
+
+.btn:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .site-logo:hover, .footer-copyright:hover,
 .user-menu li:hover, .shopping-menu li:hover,
 .nav-menu-item:hover, .footer-nav-menu-item:hover,
@@ -128,6 +152,7 @@ footer a {
 .main-search input {
   width: 356px;
   padding: 0;
+  padding-bottom: 14px;
   color: black;
   background-color: transparent;
   outline: none;
@@ -146,6 +171,10 @@ footer a {
 
 .main-search button {
   display: none;
+  width: 81px;
+  height: 44px;
+  text-align: center;
+  vertical-align: bottom;
   background-color: transparent;
   border: 2px solid black;
 }
@@ -161,7 +190,7 @@ footer a {
   background-color: black;
 }
 
-.main-search button:active, .main-search button:focus {
+.main-search button:focus, .main-search button:active {
   opacity: 0.3;
 }
 
@@ -211,6 +240,38 @@ footer a {
 .credit .service-info{
   background-image: url("../img/mainpage/credit.svg");
 }
+
+.index-columns {
+  color: black;
+  background-color: white;
+}
+
+.info-title, .contacts-title {
+  font-family: "Gilroy", Verdana, sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+  font-weight: bold;
+}
+
+.info .assortment-line, .info .delivery-line,
+.contacts .pickup-line {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 36px;
+  font-weight: normal;
+}
+
+.info .shipping-companies-list {
+  font-family: "Gilroy", Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: bold;
+}
+
+
+
+
+
 
 .modal {
   display: none;

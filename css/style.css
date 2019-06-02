@@ -1,8 +1,9 @@
 @font-face {
-  font-family: "Gilroy";
-  font-weight: normal;
   font-style: normal;
+  font-weight: normal;
+  font-family: "Gilroy";
   /*  NB: Postscript-имя шрифта идет между версией и копирайтом  */
+
   src: local("Gilroy Light"),
     local("Gilroy-Light"),
     url("../fonts/gilroy/gilroylight.woff") format("woff"),
@@ -11,10 +12,11 @@
 }
 
 @font-face {
-  font-family: "Gilroy";
-  font-weight: bold;
   /* 800 */
   font-style: normal;
+  font-weight: bold;
+  font-family: "Gilroy";
+
   src: local("Gilroy ExtraBold"),
     local("Gilroy-ExtraBold"),
     url("../fonts/gilroy/gilroyextrabold.woff2") format("woff2"),
@@ -23,10 +25,11 @@
 }
 
 @font-face {
-  font-family: "Open Sans";
-  font-weight: normal;
   /* 300 */
   font-style: normal;
+  font-weight: normal;
+  font-family: "Open Sans";
+
   src: local("Open Sans Light"),
     local("OpenSans-Light"),
     url("../fonts/open_sans/opensanslight.woff2") format("woff2"),
@@ -35,9 +38,10 @@
 }
 
 @font-face {
-  font-family: "Open Sans";
-  font-weight: bold;
   font-style: normal;
+  font-weight: bold;
+  font-family: "Open Sans";
+
   src: local("Open Sans"),
     local("OpenSans"),
     url("../fonts/opensans/opensans.woff2") format("woff2"),
@@ -51,9 +55,9 @@
   height: 1px;
   margin: -1px;
   padding: 0;
+  overflow: hidden;
   border: 0;
   clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 body {
@@ -91,11 +95,11 @@ footer a {
   font-size: 18px;
   line-height: 24px;
   font-family: "Gilroy", "Verdana", sans-serif;
+  text-align: center;
+  color: black;
   text-transform: uppercase;
   /*  NB: VA / 1000 = X em   */
   letter-spacing: 0.2em;
-  color: black;
-  text-align: center;
   background-color: white;
   background-image: linear-gradient(white 33%, rgb(240, 197, 46) 33%, rgb(240, 197, 46) 66%, white 66%);
   border: none;
@@ -198,8 +202,8 @@ footer a {
   display: none;
   width: 81px;
   height: 44px;
-  text-align: center;
   vertical-align: bottom;
+  text-align: center;
   background-color: transparent;
   border: 2px solid black;
 }
@@ -228,8 +232,8 @@ footer a {
   display: inline-block;
   width: 32px;
   height: 32px;
-  background-size: 32px 32px;
   background-repeat: no-repeat;
+  background-size: 32px 32px;
   opacity: 0.3;
 }
 
@@ -311,13 +315,13 @@ footer a {
 }
 
 .breadcrumbs {
+  list-style: none;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   font-family: "Open Sans", "Arial", sans-serif;
   color: black;
   background-color: white;
-  list-style: none;
 }
 
 .filters-title,
@@ -372,9 +376,9 @@ footer a {
   font-size: 13px;
   line-height: 36px;
   font-family: "Open Sans", "Arial", sans-serif;
+  text-align: center;
   color: black;
   background-color: transparent;
-  text-align: center;
   border: none;
   outline: none;
   opacity: 0.5;
@@ -420,8 +424,8 @@ a.goto-main:focus {
   padding: 10px;
   overflow: auto;
   font-size: inherit;
-  color: black;
   text-align: center;
+  color: black;
   background-color: rgb(247, 225, 132);
   outline: 2px solid black;
 }

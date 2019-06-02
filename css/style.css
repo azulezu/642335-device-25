@@ -60,21 +60,21 @@ body {
   min-width: 1200px;
   margin: 0;
   padding: 0 20px;
-  font-family: "Open Sans", "Segoe Script", serif;
   font-size: 15px;
   line-height: 30px;
+  font-family: "Open Sans", "Segoe Script", serif;
   color: black;
   background-color: white;
 }
 
 .site-header {
-  background-color: rgba(240, 197, 46, 0.5);
   color: black;
+  background-color: rgba(240, 197, 46, 0.5);
 }
 
 .site-footer {
-  background-color: rgb(70, 70, 70);
   color: white;
+  background-color: rgb(70, 70, 70);
 }
 
 a {
@@ -87,19 +87,18 @@ footer a {
 }
 
 .btn {
-  font-family: "Gilroy", "Verdana", sans-serif;
+  font-weight: bold;
   font-size: 18px;
   line-height: 24px;
-  font-weight: bold;
+  font-family: "Gilroy", "Verdana", sans-serif;
   text-transform: uppercase;
   /*  NB: VA / 1000 = X em   */
   letter-spacing: 0.2em;
-  text-align: center;
-  vertical-align: middle;
-  border: none;
   color: black;
+  text-align: center;
   background-color: white;
   background-image: linear-gradient(white 33%, rgb(240, 197, 46) 33%, rgb(240, 197, 46) 66%, white 66%);
+  border: none;
   outline: none;
 }
 
@@ -143,25 +142,25 @@ footer a {
 .shopping-menu,
 .address-line,
 .phone-uri {
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: normal;
   font-size: 15px;
   line-height: 30px;
-  font-weight: normal;
+  font-family: "Open Sans", "Arial", sans-serif;
 }
 
 .goodsgroup-menu {
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: normal;
   font-size: 15px;
   line-height: 36px;
-  font-weight: normal;
+  font-family: "Open Sans", "Arial", sans-serif;
 }
 
 .nav-menu-item,
 .footer-nav-menu-item {
-  font-family: "Gilroy", "Verdana", sans-serif;
+  font-weight: bold;
   font-size: 18px;
   line-height: 24px;
-  font-weight: bold;
+  font-family: "Gilroy", "Verdana", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.2em;
 }
@@ -178,11 +177,11 @@ footer a {
   width: 356px;
   padding: 0;
   padding-bottom: 14px;
+  font: inherit;
   color: black;
   background-color: transparent;
-  font: inherit;
-  outline: none;
   border: none;
+  outline: none;
   opacity: 0.3;
 }
 
@@ -191,8 +190,8 @@ footer a {
 }
 
 .main-search input:focus {
-  opacity: 1;
   border-bottom: 2px solid black;
+  opacity: 1;
 }
 
 .main-search button {
@@ -226,12 +225,12 @@ footer a {
 }
 
 .social-button {
+  display: inline-block;
   width: 32px;
   height: 32px;
   background-size: 32px 32px;
   background-repeat: no-repeat;
   opacity: 0.3;
-  display: inline-block;
 }
 
 .social-button:hover {
@@ -255,8 +254,8 @@ footer a {
 }
 
 .service-info {
-  padding-left: 200px;
   min-height: 195px;
+  padding-left: 200px;
   background-repeat: no-repeat;
 }
 
@@ -279,54 +278,54 @@ footer a {
 
 .info-title,
 .contacts-title {
-  font-family: "Gilroy", "Verdana", sans-serif;
+  font-weight: bold;
   font-size: 47px;
   line-height: 48px;
-  font-weight: bold;
+  font-family: "Gilroy", "Verdana", sans-serif;
 }
 
 .info .assortment-line,
 .info .delivery-line,
 .contacts .pickup-line {
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: normal;
   font-size: 15px;
   line-height: 36px;
-  font-weight: normal;
+  font-family: "Open Sans", "Arial", sans-serif;
 }
 
 .info .shipping-companies-list {
-  font-family: "Gilroy", "Verdana", sans-serif;
+  font-weight: bold;
   font-size: 16px;
   line-height: 40px;
-  font-weight: bold;
+  font-family: "Gilroy", "Verdana", sans-serif;
 }
 
 /*-------------------*/
 /*      catalog      */
 /*-------------------*/
 .catalog-title {
-  font-family: "Gilroy", "Verdana", sans-serif;
+  font-weight: bold;
   font-size: 47px;
   line-height: 48px;
-  font-weight: bold;
+  font-family: "Gilroy", "Verdana", sans-serif;
 }
 
 .breadcrumbs {
-  color: black;
-  background-color: white;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: normal;
   font-size: 14px;
   line-height: 24px;
-  font-weight: normal;
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: black;
+  background-color: white;
   list-style: none;
 }
 
 .filters-title,
 .sorter-title {
-  font-family: "Gilroy", "Verdana", sans-serif;
+  font-weight: bold;
   font-size: 16px;
   line-height: 24px;
-  font-weight: bold;
+  font-family: "Gilroy", "Verdana", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.2em;
 }
@@ -339,40 +338,40 @@ footer a {
 .price-range legend,
 .colors legend,
 .bluetooth legend {
-  font-family: "Gilroy", "Verdana", sans-serif;
+  font-weight: bold;
   font-size: 18px;
   line-height: 24px;
-  font-weight: bold;
+  font-family: "Gilroy", "Verdana", sans-serif;
 }
 
 .filters label {
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: normal;
   font-size: 14px;
   line-height: 40px;
-  font-weight: normal;
+  font-family: "Open Sans", "Arial", sans-serif;
 }
 
 .catalog-item .item-name {
-  font-family: "Gilroy", "Verdana", sans-serif;
+  font-weight: bold;
   font-size: 18px;
   line-height: 24px;
-  font-weight: bold;
+  font-family: "Gilroy", "Verdana", sans-serif;
 }
 
 .catalog-item .price {
-  font-family: "Gilroy", "Verdana", sans-serif;
+  font-weight: normal;
   font-size: 16px;
   line-height: 24px;
-  font-weight: normal;
+  font-family: "Gilroy", "Verdana", sans-serif;
 }
 
 .catalog .compare-item {
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: normal;
   font-size: 13px;
   line-height: 36px;
-  font-weight: normal;
+  font-family: "Open Sans", "Arial", sans-serif;
   color: black;
   background-color: transparent;
   text-align: center;
@@ -402,29 +401,29 @@ footer a {
 /*  www.w3.org/TR/WCAG20-TECHS/G1.html  */
 /* ------------------------------------ */
 a.goto-main {
-  left: -999px;
   position: absolute;
   top: auto;
+  left: -999px;
+  z-index: -999;
   width: 1px;
   height: 1px;
   overflow: hidden;
-  z-index: -999;
 }
 
 a.goto-main:focus {
-  left: auto;
   top: 20px;
+  left: auto;
+  z-index: 999;
   width: auto;
   height: auto;
-  overflow: auto;
   margin: auto;
   padding: 10px;
+  overflow: auto;
   font-size: inherit;
+  color: black;
   text-align: center;
   background-color: rgb(247, 225, 132);
-  color: black;
   outline: 2px solid black;
-  z-index: 999;
 }
 
 /* ------------------- */

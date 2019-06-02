@@ -1,43 +1,49 @@
 @font-face {
-    font-family: "Gilroy";
-    font-weight: normal;
-    font-style: normal;
-/*  NB: Postscript-имя шрифта идет между версией и копирайтом  */
-    src: local("Gilroy Light"), local("Gilroy-Light"),
-          url("../fonts/gilroy/gilroylight.woff") format("woff"),
-          url("../fonts/gilroy/gilroylight.woff") format("woff"),
-          url("../fonts/gilroy/gilroylight.ttf") format("truetype");
+  font-family: "Gilroy";
+  font-weight: normal;
+  font-style: normal;
+  /*  NB: Postscript-имя шрифта идет между версией и копирайтом  */
+  src: local("Gilroy Light"),
+    local("Gilroy-Light"),
+    url("../fonts/gilroy/gilroylight.woff") format("woff"),
+    url("../fonts/gilroy/gilroylight.woff") format("woff"),
+    url("../fonts/gilroy/gilroylight.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: "Gilroy";
-    font-weight: bold; /* 800 */
-    font-style: normal;
-    src: local("Gilroy ExtraBold"), local("Gilroy-ExtraBold"),
-          url("../fonts/gilroy/gilroyextrabold.woff2") format("woff2"),
-          url("../fonts/gilroy/gilroyextrabold.woff") format("woff"),
-          url("../fonts/gilroy/gilroyextrabold.ttf") format("truetype");
+  font-family: "Gilroy";
+  font-weight: bold;
+  /* 800 */
+  font-style: normal;
+  src: local("Gilroy ExtraBold"),
+    local("Gilroy-ExtraBold"),
+    url("../fonts/gilroy/gilroyextrabold.woff2") format("woff2"),
+    url("../fonts/gilroy/gilroyextrabold.woff") format("woff"),
+    url("../fonts/gilroy/gilroyextrabold.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: "Open Sans";
-    font-weight: normal; /* 300 */
-    font-style: normal;
-    src: local("Open Sans Light"), local("OpenSans-Light"),
-          url("../fonts/open_sans/opensanslight.woff2") format("woff2"),
-          url("../fonts/open_sans/opensanslight.woff") format("woff"),
-          url("../fonts/open_sans/OpenSans-Light.ttf") format("truetype");
+  font-family: "Open Sans";
+  font-weight: normal;
+  /* 300 */
+  font-style: normal;
+  src: local("Open Sans Light"),
+    local("OpenSans-Light"),
+    url("../fonts/open_sans/opensanslight.woff2") format("woff2"),
+    url("../fonts/open_sans/opensanslight.woff") format("woff"),
+    url("../fonts/open_sans/OpenSans-Light.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: "Open Sans";
-    font-weight: bold;
-    font-style: normal;
-    src: local("Open Sans"), local("OpenSans"),
-          url("../fonts/opensans/opensans.woff2") format("woff2"),
-          url("../fonts/opensans/opensans.woff") format("woff"),
-          url("../fonts/opensans/OpenSans-Regular.ttf") format("truetype");
-    }
+  font-family: "Open Sans";
+  font-weight: bold;
+  font-style: normal;
+  src: local("Open Sans"),
+    local("OpenSans"),
+    url("../fonts/opensans/opensans.woff2") format("woff2"),
+    url("../fonts/opensans/opensans.woff") format("woff"),
+    url("../fonts/opensans/OpenSans-Regular.ttf") format("truetype");
+}
 
 .visually-hidden {
   position: absolute;
@@ -51,20 +57,19 @@
 }
 
 body {
-	min-width: 1200px;
+  min-width: 1200px;
   margin: 0;
   padding: 0 20px;
-
-	font-family: "Open Sans", Segoe Script, serif;
-	font-size: 15px;
-	line-height: 30px;
-	color: black;
-	background-color: white;
+  font-family: "Open Sans", "Segoe Script", serif;
+  font-size: 15px;
+  line-height: 30px;
+  color: black;
+  background-color: white;
 }
 
 .site-header {
- background-color: rgba(240, 197, 46, 0.5);
- color: black;
+  background-color: rgba(240, 197, 46, 0.5);
+  color: black;
 }
 
 .site-footer {
@@ -73,16 +78,16 @@ body {
 }
 
 a {
-	color: black;
+  color: black;
   text-decoration: none;
 }
 
 footer a {
-	color: white;
+  color: white;
 }
 
 .btn {
-  font-family: "Gilroy", Verdana, sans-serif;
+  font-family: "Gilroy", "Verdana", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
@@ -113,38 +118,47 @@ footer a {
   background-color: rgb(240, 197, 46);
 }
 
-.site-logo:hover, .footer-copyright:hover,
-.user-menu li:hover, .shopping-menu li:hover,
-.nav-menu-item:hover, .footer-nav-menu-item:hover,
+.site-logo:hover,
+.footer-copyright:hover,
+.user-menu li:hover,
+.shopping-menu li:hover,
+.nav-menu-item:hover,
+.footer-nav-menu-item:hover,
 .goodsgroup-menu li:hover {
   opacity: 0.6;
 }
 
-.site-logo:active, .footer-copyright:active,
-.user-menu li:active, .shopping-menu li:active,
-.nav-menu-item:active, .footer-nav-menu-item:active,
+.site-logo:active,
+.footer-copyright:active,
+.user-menu li:active,
+.shopping-menu li:active,
+.nav-menu-item:active,
+.footer-nav-menu-item:active,
 .goodsgroup-menu li:active {
   opacity: 0.3;
 }
 
 .main-search,
-.user-menu, .shopping-menu,
-.address-line, .phone-uri {
-  font-family: "Open Sans", Arial, sans-serif;
+.user-menu,
+.shopping-menu,
+.address-line,
+.phone-uri {
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 30px;
   font-weight: normal;
 }
 
 .goodsgroup-menu {
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 36px;
   font-weight: normal;
 }
 
-.nav-menu-item, .footer-nav-menu-item {
-  font-family: "Gilroy", Verdana, sans-serif;
+.nav-menu-item,
+.footer-nav-menu-item {
+  font-family: "Gilroy", "Verdana", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
@@ -152,9 +166,11 @@ footer a {
   letter-spacing: 0.2em;
 }
 
-.user-menu, .shopping-menu,
+.user-menu,
+.shopping-menu,
 .navigation-menu ul,
-.footer-navigation-menu, .footer-social {
+.footer-navigation-menu,
+.footer-social {
   list-style: none;
 }
 
@@ -164,7 +180,7 @@ footer a {
   padding-bottom: 14px;
   color: black;
   background-color: transparent;
-  font:inherit;
+  font: inherit;
   outline: none;
   border: none;
   opacity: 0.3;
@@ -200,7 +216,8 @@ footer a {
   background-color: black;
 }
 
-.main-search button:focus, .main-search button:active {
+.main-search button:focus,
+.main-search button:active {
   opacity: 0.3;
 }
 
@@ -243,15 +260,15 @@ footer a {
   background-repeat: no-repeat;
 }
 
-.delivery .service-info{
+.delivery .service-info {
   background-image: url("../img/mainpage/delivery.svg");
 }
 
-.warranty .service-info{
+.warranty .service-info {
   background-image: url("../img/mainpage/warranty.svg");
 }
 
-.credit .service-info{
+.credit .service-info {
   background-image: url("../img/mainpage/credit.svg");
 }
 
@@ -260,23 +277,25 @@ footer a {
   background-color: white;
 }
 
-.info-title, .contacts-title {
-  font-family: "Gilroy", Verdana, sans-serif;
+.info-title,
+.contacts-title {
+  font-family: "Gilroy", "Verdana", sans-serif;
   font-size: 47px;
   line-height: 48px;
   font-weight: bold;
 }
 
-.info .assortment-line, .info .delivery-line,
+.info .assortment-line,
+.info .delivery-line,
 .contacts .pickup-line {
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 36px;
   font-weight: normal;
 }
 
 .info .shipping-companies-list {
-  font-family: "Gilroy", Verdana, sans-serif;
+  font-family: "Gilroy", "Verdana", sans-serif;
   font-size: 16px;
   line-height: 40px;
   font-weight: bold;
@@ -285,9 +304,8 @@ footer a {
 /*-------------------*/
 /*      catalog      */
 /*-------------------*/
-
 .catalog-title {
-  font-family: "Gilroy", Verdana, sans-serif;
+  font-family: "Gilroy", "Verdana", sans-serif;
   font-size: 47px;
   line-height: 48px;
   font-weight: bold;
@@ -296,15 +314,16 @@ footer a {
 .breadcrumbs {
   color: black;
   background-color: white;
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: normal;
   list-style: none;
 }
 
-.filters-title, .sorter-title {
-  font-family: "Gilroy", Verdana, sans-serif;
+.filters-title,
+.sorter-title {
+  font-family: "Gilroy", "Verdana", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: bold;
@@ -314,33 +333,34 @@ footer a {
 
 .filters fieldset {
   padding: 0;
-  border:none;
+  border: none;
 }
 
-.price-range legend, .colors legend,
+.price-range legend,
+.colors legend,
 .bluetooth legend {
-  font-family: "Gilroy", Verdana, sans-serif;
+  font-family: "Gilroy", "Verdana", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
 }
 
 .filters label {
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 40px;
   font-weight: normal;
 }
 
 .catalog-item .item-name {
-  font-family: "Gilroy", Verdana, sans-serif;
+  font-family: "Gilroy", "Verdana", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
 }
 
 .catalog-item .price {
-  font-family: "Gilroy", Verdana, sans-serif;
+  font-family: "Gilroy", "Verdana", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: normal;
@@ -349,7 +369,7 @@ footer a {
 .catalog .compare-item {
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 36px;
   font-weight: normal;
@@ -370,61 +390,55 @@ footer a {
 }
 
 .catalog .compare-item:active {
-opacity: 0.2;
+  opacity: 0.2;
 }
 
 .modal {
   display: none;
 }
 
-
-
 /* ------------------------------------ */
 /*  Стили для пропуска навигации        */
 /*  www.w3.org/TR/WCAG20-TECHS/G1.html  */
 /* ------------------------------------ */
-
 a.goto-main {
-    left: -999px;
-    position: absolute;
-    top: auto;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    z-index: -999;
+  left: -999px;
+  position: absolute;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: -999;
 }
 
 a.goto-main:focus {
-    left: auto;
-    top: 20px;
-    width: auto;
-    height: auto;
-    overflow: auto;
-
-    margin: auto;
-    padding: 10px;
-    font-size: inherit;
-    text-align: center;
-    background-color: rgb(247, 225, 132);
-    color: black;
-    outline: 2px solid black;
-    z-index: 999;
+  left: auto;
+  top: 20px;
+  width: auto;
+  height: auto;
+  overflow: auto;
+  margin: auto;
+  padding: 10px;
+  font-size: inherit;
+  text-align: center;
+  background-color: rgb(247, 225, 132);
+  color: black;
+  outline: 2px solid black;
+  z-index: 999;
 }
 
 /* ------------------- */
-
 .brends-item-pic {
-  filter: grayscale(100%)
-          opacity(20%);
+  filter: grayscale(100%) opacity(20%);
 }
 
-.brends-item-pic:hover, .brends-item-pic:active {
+.brends-item-pic:hover,
+.brends-item-pic:active {
   filter: none;
 }
 
 /* ------------------------------------ */
 /*  Стили для проверки слайдера         */
-/*                                      */
 /* ------------------------------------ */
 /*
 .promo-slider {
@@ -444,9 +458,9 @@ a.goto-main:focus {
 
 .promo-slider input[type="radio"] {
   */
-  /* ????????? как правильно прятать ???????  */
-  /* при применении visually-hidden неактивен */
-  /*
+/* ????????? как правильно прятать ???????  */
+/* при применении visually-hidden неактивен */
+/*
     position: inherit;
     margin: -3px;
 }

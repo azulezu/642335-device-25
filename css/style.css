@@ -87,6 +87,7 @@ footer a {
   line-height: 24px;
   font-weight: bold;
   text-transform: uppercase;
+  /*  NB: VA / 1000 = X em   */
   letter-spacing: 0.2em;
   text-align: center;
   vertical-align: middle;
@@ -94,6 +95,7 @@ footer a {
   color: black;
   background-color: white;
   background-image: linear-gradient(white 33%, rgb(240, 197, 46) 33%, rgb(240, 197, 46) 66%, white 66%);
+  outline: none;
 }
 
 .btn:hover {
@@ -101,8 +103,14 @@ footer a {
   background-image: none;
 }
 
+.btn:focus {
+  background-color: rgb(240, 197, 46);
+  background-image: none;
+}
+
 .btn:active {
   color: rgba(0, 0, 0, 0.3);
+  background-color: rgb(240, 197, 46);
 }
 
 .site-logo:hover, .footer-copyright:hover,
@@ -119,6 +127,7 @@ footer a {
   opacity: 0.3;
 }
 
+.main-search,
 .user-menu, .shopping-menu,
 .address-line, .phone-uri {
   font-family: "Open Sans", Arial, sans-serif;
@@ -140,11 +149,11 @@ footer a {
   line-height: 24px;
   font-weight: bold;
   text-transform: uppercase;
-  /*   VA / 1000 = X em   */
   letter-spacing: 0.2em;
 }
 
-.user-menu, .shopping-menu, .navigation-menu ul,
+.user-menu, .shopping-menu,
+.navigation-menu ul,
 .footer-navigation-menu, .footer-social {
   list-style: none;
 }
@@ -155,6 +164,7 @@ footer a {
   padding-bottom: 14px;
   color: black;
   background-color: transparent;
+  font:inherit;
   outline: none;
   border: none;
   opacity: 0.3;
@@ -191,6 +201,10 @@ footer a {
 }
 
 .main-search button:focus, .main-search button:active {
+  opacity: 0.3;
+}
+
+.logout {
   opacity: 0.3;
 }
 
@@ -268,69 +282,107 @@ footer a {
   font-weight: bold;
 }
 
+/*-------------------*/
+/*      catalog      */
+/*-------------------*/
 
+.catalog-title {
+  font-family: "Gilroy", Verdana, sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+  font-weight: bold;
+}
 
+.breadcrumbs {
+  color: black;
+  background-color: white;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+  list-style: none;
+}
 
+.filters-title, .sorter-title {
+  font-family: "Gilroy", Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
 
+.filters fieldset {
+  padding: 0;
+  border:none;
+}
+
+.price-range legend, .colors legend,
+.bluetooth legend {
+  font-family: "Gilroy", Verdana, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.filters label {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 40px;
+  font-weight: normal;
+}
+
+.catalog-item .item-name {
+  font-family: "Gilroy", Verdana, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.catalog-item .price {
+  font-family: "Gilroy", Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+}
+
+.catalog .compare-item {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 36px;
+  font-weight: normal;
+  color: black;
+  background-color: transparent;
+  text-align: center;
+  border: none;
+  outline: none;
+  opacity: 0.5;
+}
+
+.catalog .compare-item:hover {
+  opacity: 1;
+}
+
+.catalog .compare-item:focus {
+  opacity: 1;
+}
+
+.catalog .compare-item:active {
+opacity: 0.2;
+}
 
 .modal {
   display: none;
 }
 
-/* ------------------- */
-/*
-.btn {
-  background-color: rgb(248, 245, 190);
-  background-color: rgb(247, 243, 170);
-  background-color: rgb(248, 245, 190);
 
-  background-color: rgb(240, 197, 46);
-}
-
-.goodsgroups-item-pic-wrapper {
-  width: 160px;
-  height: 160px;
-  background-color: rgba(250, 249, 212, 0.5);
-  background-color: rgba(247, 246, 150, 1);
-  background-color: rgba(240, 197, 46, 0.5);
-  text-align: center;
-}
-
-.service-slider {
-    background-color: rgb(229, 229, 229);
-}
-
-.site-footer {
-    background-color: rgb(70, 70, 70);
-    color: rgb(255, 198, 0);
-}
-
-.sorter {
-    background-color: rgb(235, 235, 235);
-}
-
-.filters {
-    background-color: rgb(239, 239, 239);
-}
-
-.filters-title {
-    background-color: rgb(220, 220, 220);
-}
-
-.price-range-line {
-  background-color: rgb(145, 201, 47);
-}
-
-.paginator {
-  background-color: rgb(239, 239, 239);
-}
-*/
 
 /* ------------------------------------ */
 /*  Стили для пропуска навигации        */
 /*  www.w3.org/TR/WCAG20-TECHS/G1.html  */
 /* ------------------------------------ */
-
 
 a.goto-main {
     left: -999px;
@@ -361,8 +413,6 @@ a.goto-main:focus {
 
 /* ------------------- */
 
-
-
 .brends-item-pic {
   filter: grayscale(100%)
           opacity(20%);
@@ -380,14 +430,45 @@ a.goto-main:focus {
 .promo-slider {
   margin-left: 450px;
   width: 450px;
-  position: relative;
   background-color: cornsilk;
+  position: relative;
+  overflow: hidden;
 }
 
 .promo-controls {
   position: absolute;
-  top: 5px;
+  top: 0;
   right: 10px;
+  text-align: center;
+}
+
+.promo-slider input[type="radio"] {
+  */
+  /* ????????? как правильно прятать ???????  */
+  /* при применении visually-hidden неактивен */
+  /*
+    position: inherit;
+    margin: -3px;
+}
+
+.promo-label {
+  width: 15px;
+  height: 15px;
+  vertical-align: middle;
+  border: 1px solid black;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: white;
+}
+
+#promo-btn-1:checked ~ .promo-controls .promo-label[for="promo-btn-1"]{
+  background-color: black;
+}
+#promo-btn-2:checked ~ .promo-controls .promo-label[for="promo-btn-2"]{
+  background-color: black;
+}
+#promo-btn-3:checked ~ .promo-controls .promo-label[for="promo-btn-3"]{
+  background-color: black;
 }
 
 .promo-slide {

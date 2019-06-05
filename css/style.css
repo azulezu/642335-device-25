@@ -93,7 +93,7 @@ a {
   /*  NB: VA / 1000 = X em   */
   letter-spacing: 0.2em;
   background-color: transparent;
-  background-image: linear-gradient(white 33%, rgb(240, 197, 46) 33%, rgb(240, 197, 46) 66%, white 66%);
+  background-image: linear-gradient(transparent 33%, rgb(240, 197, 46) 33%, rgb(240, 197, 46) 66%, transparent 66%);
   border: none;
   outline: none;
 }
@@ -185,6 +185,7 @@ a {
   font: inherit;
   background-color: transparent;
   border: none;
+  border-bottom: 2px solid transparent;
   outline: none;
 }
 
@@ -200,7 +201,7 @@ a {
 
 .main-search input:focus {
   color: black;
-  border-bottom: 2px solid black;
+  border-bottom-color: black;
 }
 
 .main-search button {
@@ -232,7 +233,7 @@ a {
 }
 
 .logout {
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .social-button {

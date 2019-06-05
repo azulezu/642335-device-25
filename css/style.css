@@ -1,52 +1,46 @@
 @font-face {
   font-style: normal;
-  font-weight: normal;
+  font-weight: 300;
+  /* light */
   font-family: "Gilroy";
   /*  NB: Postscript-имя шрифта идет между версией и копирайтом  */
-
   src: local("Gilroy Light"),
     local("Gilroy-Light"),
-    url("../fonts/gilroy/gilroylight.woff") format("woff"),
-    url("../fonts/gilroy/gilroylight.woff") format("woff"),
-    url("../fonts/gilroy/gilroylight.ttf") format("truetype");
+    url("../fonts/gilroy/gilroylight.woff2") format("woff2"),
+    url("../fonts/gilroy/gilroylight.woff") format("woff");
 }
 
 @font-face {
-  /* 800 */
   font-style: normal;
-  font-weight: bold;
+  font-weight: 800;
+  /* extrabold */
   font-family: "Gilroy";
-
   src: local("Gilroy ExtraBold"),
     local("Gilroy-ExtraBold"),
     url("../fonts/gilroy/gilroyextrabold.woff2") format("woff2"),
-    url("../fonts/gilroy/gilroyextrabold.woff") format("woff"),
-    url("../fonts/gilroy/gilroyextrabold.ttf") format("truetype");
+    url("../fonts/gilroy/gilroyextrabold.woff") format("woff");
 }
 
 @font-face {
-  /* 300 */
   font-style: normal;
-  font-weight: normal;
+  font-weight: 300;
+  /* light */
   font-family: "Open Sans";
-
   src: local("Open Sans Light"),
     local("OpenSans-Light"),
-    url("../fonts/open_sans/opensanslight.woff2") format("woff2"),
-    url("../fonts/open_sans/opensanslight.woff") format("woff"),
-    url("../fonts/open_sans/OpenSans-Light.ttf") format("truetype");
+    url("../fonts/opensans/opensanslight.woff2") format("woff2"),
+    url("../fonts/opensans/opensanslight.woff") format("woff");
 }
 
 @font-face {
   font-style: normal;
-  font-weight: bold;
+  font-weight: normal;
+  /* 400 */
   font-family: "Open Sans";
-
   src: local("Open Sans"),
     local("OpenSans"),
     url("../fonts/opensans/opensans.woff2") format("woff2"),
-    url("../fonts/opensans/opensans.woff") format("woff"),
-    url("../fonts/opensans/OpenSans-Regular.ttf") format("truetype");
+    url("../fonts/opensans/opensans.woff") format("woff");
 }
 
 .visually-hidden {
@@ -63,12 +57,10 @@
 body {
   min-width: 1200px;
   margin: 0;
-  padding: 0 20px;
   font-size: 15px;
   line-height: 30px;
-  font-family: "Open Sans", "Segoe Script", serif;
+  font-family: "Open Sans", "Verdana", sans-serif;
   color: black;
-  background-color: white;
 }
 
 .site-header {
@@ -86,21 +78,21 @@ a {
   text-decoration: none;
 }
 
-footer a {
+.site-footer a {
   color: white;
 }
 
 .btn {
-  font-weight: bold;
+  font-weight: 800;
   font-size: 18px;
   line-height: 24px;
-  font-family: "Gilroy", "Verdana", sans-serif;
+  font-family: "Gilroy", "Helvetica", sans-serif;
   text-align: center;
   color: black;
   text-transform: uppercase;
   /*  NB: VA / 1000 = X em   */
   letter-spacing: 0.2em;
-  background-color: white;
+  background-color: transparent;
   background-image: linear-gradient(white 33%, rgb(240, 197, 46) 33%, rgb(240, 197, 46) 66%, white 66%);
   border: none;
   outline: none;
@@ -143,28 +135,37 @@ footer a {
 
 .main-search,
 .user-menu,
-.shopping-menu,
-.address-line,
-.phone-uri {
-  font-weight: normal;
+.shopping-menu {
+  font-weight: 300;
   font-size: 15px;
   line-height: 30px;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: "Open Sans", "Verdana", sans-serif;
+  letter-spacing: 0.01em;
 }
 
+.address-line,
+.phone-uri {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  font-family: "Open Sans", "Verdana", sans-serif;
+}
+
+
 .goodsgroup-menu {
-  font-weight: normal;
+  font-weight: 300;
   font-size: 15px;
   line-height: 36px;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: "Open Sans", "Verdana", sans-serif;
+  letter-spacing: 0.01em;
 }
 
 .nav-menu-item,
 .footer-nav-menu-item {
-  font-weight: bold;
+  font-weight: 800;
   font-size: 18px;
   line-height: 24px;
-  font-family: "Gilroy", "Verdana", sans-serif;
+  font-family: "Gilroy", "Helvetica", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.2em;
 }
@@ -180,29 +181,34 @@ footer a {
 .main-search input {
   width: 356px;
   padding: 0;
-  padding-bottom: 14px;
+  padding-bottom: 12px;
   font: inherit;
-  color: black;
   background-color: transparent;
   border: none;
   outline: none;
-  opacity: 0.3;
 }
 
-.main-search input:hover {
-  opacity: 0.6;
+.main-search input::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+  opacity: 1;
+}
+
+.main-search input:hover::placeholder {
+  color: rgba(0, 0, 0, 0.6);
+  opacity: 1;
 }
 
 .main-search input:focus {
+  color: black;
   border-bottom: 2px solid black;
-  opacity: 1;
 }
 
 .main-search button {
   display: none;
   width: 81px;
-  height: 44px;
-  vertical-align: bottom;
+  padding-top: 11px;
+  padding-bottom: 12px;
+  vertical-align: top;
   text-align: center;
   background-color: transparent;
   border: 2px solid black;
@@ -214,18 +220,19 @@ footer a {
   background-color: transparent;
 }
 
-.main-search input:focus + button:hover {
+.main-search input:focus + button:hover,
+.main-search input:focus + button:focus {
   color: white;
   background-color: black;
 }
 
-.main-search button:focus,
 .main-search button:active {
-  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3);
+  background-color: black;
 }
 
 .logout {
-  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .social-button {
@@ -282,54 +289,58 @@ footer a {
 
 .info-title,
 .contacts-title {
-  font-weight: bold;
+  font-weight: 800;
   font-size: 47px;
   line-height: 48px;
-  font-family: "Gilroy", "Verdana", sans-serif;
+  font-family: "Gilroy", "Helvetica", sans-serif;
+  letter-spacing: 0.01em;
 }
 
 .info .assortment-line,
 .info .delivery-line,
 .contacts .pickup-line {
-  font-weight: normal;
+  font-weight: 300;
   font-size: 15px;
-  line-height: 36px;
-  font-family: "Open Sans", "Arial", sans-serif;
+  line-height: 30px;
+  font-family: "Open Sans", "Verdana", sans-serif;
+  color: rgb(70, 70, 70);
 }
 
 .info .shipping-companies-list {
-  font-weight: bold;
+  font-weight: 800;
   font-size: 16px;
   line-height: 40px;
-  font-family: "Gilroy", "Verdana", sans-serif;
+  font-family: "Gilroy", "Helvetica", sans-serif;
 }
 
 /*-------------------*/
-/*      catalog      */
+/*     catalog      */
 /*-------------------*/
 .catalog-title {
-  font-weight: bold;
+  font-weight: 800;
   font-size: 47px;
   line-height: 48px;
-  font-family: "Gilroy", "Verdana", sans-serif;
+  font-family: "Gilroy", "Helvetica", sans-serif;
+  letter-spacing: 0.01em;
 }
 
 .breadcrumbs {
   list-style: none;
-  font-weight: normal;
+  font-weight: 300;
   font-size: 14px;
   line-height: 24px;
-  font-family: "Open Sans", "Arial", sans-serif;
-  color: black;
+  font-family: "Open Sans", "Verdana", sans-serif;
+  color: rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.01em;
   background-color: white;
 }
 
 .filters-title,
 .sorter-title {
-  font-weight: bold;
+  font-weight: 800;
   font-size: 16px;
   line-height: 24px;
-  font-family: "Gilroy", "Verdana", sans-serif;
+  font-family: "Gilroy", "Helvetica", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.2em;
 }
@@ -342,42 +353,48 @@ footer a {
 .price-range legend,
 .colors legend,
 .bluetooth legend {
-  font-weight: bold;
+  font-weight: 800;
   font-size: 18px;
   line-height: 24px;
-  font-family: "Gilroy", "Verdana", sans-serif;
+  font-family: "Gilroy", "Helvetica", sans-serif;
+  letter-spacing: 0.01em;
 }
 
 .filters label {
-  font-weight: normal;
+  font-weight: 300;
   font-size: 14px;
   line-height: 40px;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: "Open Sans", "Verdana", sans-serif;
+  letter-spacing: 0.01em;
 }
 
 .catalog-item .item-name {
-  font-weight: bold;
+  font-weight: 800;
   font-size: 18px;
   line-height: 24px;
-  font-family: "Gilroy", "Verdana", sans-serif;
+  font-family: "Gilroy", "Helvetica", sans-serif;
+  letter-spacing: 0.01em;
 }
 
 .catalog-item .price {
-  font-weight: normal;
+  font-weight: 300;
   font-size: 16px;
   line-height: 24px;
-  font-family: "Gilroy", "Verdana", sans-serif;
+  font-family: "Gilroy", "Helvetica", sans-serif;
+  color: rgb(70, 70, 70);
+  letter-spacing: 0.01em;
 }
 
 .catalog .compare-item {
   margin: 0;
   padding: 0;
-  font-weight: normal;
+  font-weight: 300;
   font-size: 13px;
-  line-height: 36px;
-  font-family: "Open Sans", "Arial", sans-serif;
+  line-height: 20px;
+  font-family: "Open Sans", "Verdana", sans-serif;
   text-align: center;
   color: black;
+  letter-spacing: 0.01em;
   background-color: transparent;
   border: none;
   outline: none;

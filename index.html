@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -17,8 +16,8 @@
 
         <form class="main-search" action="https://echo.htmlacademy.ru" method="get" role="search">
           <label class="visually-hidden" for="site-search">Поиск по сайту</label>
-          <input type="search" id="site-search" name="search" placeholder="Поиск по сайту">
-          <button type="submit">Найти</button>
+          <input type="search" name="search" id="site-search" placeholder="Поиск по сайту"><!--
+          --><button type="submit">Найти</button>
         </form>
 
         <ul class="user-menu" aria-label="Личный кабинет">
@@ -152,7 +151,7 @@
       </section> <!-- promo-slider -->
 
       <section class="goodsgroups">
-        <h2 class="info-title visually-hidden">Категории товаров</h2>
+        <h2 class="visually-hidden">Категории товаров</h2>
         <ul class="goodsgroups-list">
           <li  class="goodsgroups-item">
             <a href="inner.html">
@@ -211,9 +210,9 @@
         <input class="visually-hidden" type="radio" id="service-btn-2" name="service-btn">
         <input class="visually-hidden" type="radio" id="service-btn-3" name="service-btn">
         <div class="service-controls">
-          <label class="service-label btn" for="service-btn-1">Доставка</label>
-          <label class="service-label btn" for="service-btn-2">Гарантия</label>
-          <label class="service-label btn" for="service-btn-3">Кредит</label>
+          <label class="service-label btn" for="service-btn-1" tabindex="0">Доставка</label>
+          <label class="service-label btn" for="service-btn-2" tabindex="0">Гарантия</label>
+          <label class="service-label btn" for="service-btn-3" tabindex="0">Кредит</label>
         </div>
         <div class="service-inner">
           <div class="service-wrapper">

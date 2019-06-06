@@ -85,6 +85,7 @@ a {
 .user-menu,
 .shopping-menu,
 .navigation-menu ul,
+.goodsgroups-list,
 .brends-list,
 .footer-navigation-menu,
 .footer-social,
@@ -332,6 +333,10 @@ a {
   color: rgba(0, 0, 0, 0.3);
   letter-spacing: 0.01em;
   background-color: white;
+}
+
+.breadcrumbs a{
+  color: inherit;
 }
 
 .filters-title,

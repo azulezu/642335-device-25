@@ -82,6 +82,19 @@ a {
   color: white;
 }
 
+.user-menu,
+.shopping-menu,
+.navigation-menu ul,
+.brends-list,
+.footer-navigation-menu,
+.footer-social,
+.catalog-list,
+.breadcrumbs,
+.paginator-list {
+  list-style: none;
+  padding: 0;
+}
+
 .btn {
   font-weight: 800;
   font-size: 18px;
@@ -170,14 +183,6 @@ a {
   letter-spacing: 0.2em;
 }
 
-.user-menu,
-.shopping-menu,
-.navigation-menu ul,
-.footer-navigation-menu,
-.footer-social {
-  list-style: none;
-}
-
 .main-search input {
   width: 356px;
   padding: 0;
@@ -185,8 +190,8 @@ a {
   font: inherit;
   background-color: transparent;
   border: none;
-  border-bottom: 2px solid transparent;
   outline: none;
+  border-bottom: 2px solid transparent;
 }
 
 .main-search input::placeholder {
@@ -265,12 +270,6 @@ a {
   background-image: url("../img/footer/twitter.svg");
 }
 
-.service-info {
-  min-height: 195px;
-  padding-left: 200px;
-  background-repeat: no-repeat;
-}
-
 .delivery .service-info {
   background-image: url("../img/mainpage/delivery.svg");
 }
@@ -326,7 +325,6 @@ a {
 }
 
 .breadcrumbs {
-  list-style: none;
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
@@ -418,6 +416,224 @@ a {
   display: none;
 }
 
+/*-------------------*/
+/*  доп. блоки   */
+/*-------------------*/
+
+.promo-number {
+  font-weight: 800;
+  font-size: 179.2px;
+  line-height: 179.2px;
+  font-family: "Gilroy", "Helvetica", sans-serif;
+  letter-spacing: 0.01em;
+  color: white;
+  /* временно */
+  background-color: rgba(250, 0, 250, 0.1);
+  margin-left: auto;
+  /* ======== */
+}
+
+.promo-slogan {
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 56px;
+  font-family: "Gilroy", "Helvetica", sans-serif;
+  letter-spacing: 0.01em;
+  color: black;
+}
+
+.promo-details th {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 20px;
+  font-family: "Open Sans", "Verdana", sans-serif;
+  color: rgb(70, 70, 70);
+  letter-spacing: 0.01em;
+}
+
+.promo-details td {
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 48px;
+  font-family: "Gilroy", "Helvetica", sans-serif;
+  color: black;
+  letter-spacing: 0.01em;
+}
+
+.goodsgroups-item-line {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Gilroy", "Helvetica", sans-serif;
+  letter-spacing: 0.01em;
+  color: black;
+}
+
+.goodsgroups-item-pic-wrapper {
+  background-color: rgba(240, 197, 45, 0.5);
+}
+
+.goodsgroups-item:hover .goodsgroups-item-pic-wrapper {
+  background-color: rgb(240, 197, 45);
+}
+
+.goodsgroups-item:active .goodsgroups-item-pic {
+  opacity: 0.3;
+}
+
+.service-slider {
+  background-image: linear-gradient(white 100px, rgb(229, 229, 229) 100px);
+}
+
+.service-controls {
+  /* временно */
+  width: 350px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /* ======== */
+  border-right: 7px solid black;
+}
+
+.service-label:active {
+  color: rgb(247, 225, 132);
+  background-color: black;
+  /* временно */
+  width: 100%;
+  display: inline-block;
+  text-align: start;
+  /* ======== */
+}
+
+.service-slide-title {
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 48px;
+  font-family: "Gilroy", "Helvetica", sans-serif;
+  letter-spacing: 0.01em;
+  color: black;
+}
+
+.service-info {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  font-family: "Open Sans", "Verdana", sans-serif;
+  color: rgb(70, 70, 70);
+  letter-spacing: 0.01em;
+  background-repeat: no-repeat;
+}
+
+.service-info {
+  /* временно */
+  min-height: 195px;
+  padding-left: 200px;
+  /* ======== */
+}
+
+.filters {
+  background-color: rgb(238, 238, 238);
+}
+
+.filters-title {
+  background-color: rgb(220, 220, 220);
+}
+
+.price-range-description {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Gilroy", "Helvetica", sans-serif;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.colors input:disabled + label,
+.bluetooth input:disabled + label {
+  color: rgb(166, 166, 166);
+}
+
+.sorter {
+  background-color: rgb(238, 238, 238);
+}
+
+.order-item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Open Sans", "Verdana", sans-serif;
+  color: rgb(0, 0, 0, 0.3);
+}
+
+.order-item a {
+  color: inherit;
+}
+
+.order-item.current {
+  color: black;
+}
+
+.order-item:hover {
+  color: rgb(0, 0, 0, 0.6);
+}
+
+.order-item:active {
+  color: black;
+}
+
+.sorter-arrow {
+  color: rgb(0, 0, 0, 0.3);
+}
+
+.sorter-arrow a {
+  color: inherit;
+}
+
+.sorter-arrow.current {
+  color: black;
+}
+
+.sorter-arrow:hover {
+  color: rgb(0, 0, 0, 0.6);
+}
+
+.sorter-arrow:active {
+  color: black;
+}
+
+.paginator {
+  background-color: rgb(235, 235, 235);
+}
+
+.paginator-prev,
+.paginator-next,
+.paginator-item a {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Gilroy", "Helvetica", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.paginator-prev,
+.paginator-next,
+.paginator-item.current a {
+  color: black;
+}
+
+.paginator-item a {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.paginator-prev:hover,
+.paginator-next:hover {
+  background-color: rgb(217, 217, 217);
+}
+
+.paginator-prev:active,
+.paginator-next:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 /* ------------------------------------ */
 /*  Стили для пропуска навигации        */
 /*  www.w3.org/TR/WCAG20-TECHS/G1.html  */
@@ -448,6 +664,7 @@ a.goto-main:focus {
   outline: 2px solid black;
 }
 
+
 /* ------------------- */
 .brends-item-pic {
   filter: grayscale(100%) opacity(20%);
@@ -463,11 +680,11 @@ a.goto-main:focus {
 /* ------------------------------------ */
 /*
 .promo-slider {
+  position: relative;
+  overflow: hidden;
   margin-left: 450px;
   width: 450px;
   background-color: cornsilk;
-  position: relative;
-  overflow: hidden;
 }
 
 .promo-controls {

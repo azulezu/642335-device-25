@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="css/normalize.css">
+    <!-- <link rel="stylesheet" href="css/outline.css"> -->
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -283,30 +284,35 @@
     </main>
 
     <footer class="site-footer">
-        <a class="site-logo"><img src="img/footer/logo_yellow.svg"  width="163" height="35" alt="Лого магазина Device" title="DEVICE"></a>
-        <ul class="user-menu" aria-label="Личный кабинет">
-            <li class="login-link"><a href="#">Войти</a></li>
-        </ul> <!-- user-menu -->
+      <div class="site-footer-wrapper">
+          <a class="site-logo"><img src="img/footer/logo_yellow.svg"  width="163" height="35" alt="Лого магазина Device" title="DEVICE"></a>
+          <ul class="user-menu" aria-label="Личный кабинет">
+              <li class="login-link"><a href="#">Войти</a></li>
+          </ul> <!-- user-menu -->
+          <ul class="shopping-menu" aria-label="Отмеченные товары">
+            <li><a class="compare" href="#">Сравнить</a></li>
+            <li><a class="cart" href="#">Корзина</a></li>
+          </ul> <!-- shopping-menu -->
+        </div>
 
-        <ul class="shopping-menu" aria-label="Отмеченные товары">
-          <li><a class="compare" href="#">Сравнить</a></li>
-          <li><a class="cart" href="#">Корзина</a></li>
-        </ul> <!-- shopping-menu -->
+        <div class="site-footer-wrapper">
+          <p class="address-line">г. Москва, ул. Строителей, 15</p>
+          <ul class="footer-navigation-menu" >
+            <li><a class="footer-nav-menu-item" href="#">Доставка</a></li>
+            <li><a class="footer-nav-menu-item" href="#">Гарантия</a></li>
+            <li><a class="footer-nav-menu-item" href="#">Контакты</a></li>
+          </ul>
+          <a class="phone-uri" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+        </div>
 
-        <p class="address-line">г. Москва, ул. Строителей, 15</p>
-
-        <ul class="footer-navigation-menu" >
-          <li><a class="footer-nav-menu-item" href="#">Доставка</a></li>
-          <li><a class="footer-nav-menu-item" href="#">Гарантия</a></li>
-          <li><a class="footer-nav-menu-item" href="#">Контакты</a></li>
-        </ul>
-        <a class="phone-uri" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
-        <ul class="footer-social" aria-label="Магазин Девайс в социальных сетях">
-          <li><a class="social-button fb" href="https://www.facebook.com" target="_blank"><span class="visually-hidden">Facebook</span></a></li>
-          <li><a class="social-button insta" href="https://instagram.com" target="_blank"><span class="visually-hidden">Instagram</span></a></li>
-          <li><a class="social-button tw" href="https://twitter.com" target="_blank"><span class="visually-hidden">Twitter</span></a></li>
-        </ul>
-        <a class="footer-copyright" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"><img src="img/footer/logo-html_yellow.svg" width="27" height="35" alt="Лого HTML Academy" title="HTML Academy"></a>
+        <div class="site-footer-wrapper">
+          <ul class="footer-social" aria-label="Магазин Девайс в социальных сетях">
+            <li><a class="social-button fb" href="https://www.facebook.com" target="_blank"><span class="visually-hidden">Facebook</span></a></li>
+            <li><a class="social-button insta" href="https://instagram.com" target="_blank"><span class="visually-hidden">Instagram</span></a></li>
+            <li><a class="social-button tw" href="https://twitter.com" target="_blank"><span class="visually-hidden">Twitter</span></a></li>
+          </ul>
+          <a class="footer-copyright" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"><img src="img/footer/logo-html_yellow.svg" width="27" height="35" alt="Лого HTML Academy" title="HTML Academy"></a>
+      </div>
     </footer>
 <!--
 https://www.w3.org/TR/html/editing.html#inert-subtrees

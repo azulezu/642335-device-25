@@ -360,7 +360,7 @@ body {
 }
 
 .login::before,
-.account::before,
+.account a::before,
 .compare::before,
 .cart::before {
   content: "";
@@ -375,7 +375,7 @@ body {
 }
 
 .login::before,
-.account::before {
+.account a::before {
   top: 9px;
   background-image: url("../img/icon/ico_user.svg");
 }
@@ -492,8 +492,7 @@ body {
   margin-right: 38px;
 }
 
-.site-footer .login::before,
-.site-footer .account::before {
+.site-footer .account a::before {
   background-image: url("../img/icon/ico_user_yellow.svg");
 }
 
@@ -514,6 +513,10 @@ body {
 
 .user-menu .logout {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.site-footer .logout {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .address-line,

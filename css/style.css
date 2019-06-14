@@ -185,6 +185,7 @@ body {
   font-size: 18px;
   line-height: 24px;
   font-family: "Gilroy", "Helvetica", sans-serif;
+  vertical-align: middle;
   text-align: center;
   color: black;
   text-transform: uppercase;
@@ -194,8 +195,6 @@ body {
   background-image: linear-gradient(transparent 16px, rgb(240, 197, 46) 16px, rgb(240, 197, 46) 24px, transparent 24px);
   border: none;
   outline: none;
-
-  vertical-align: middle;
 }
 
 .btn:hover {
@@ -1216,14 +1215,18 @@ li:last-child .footer-nav-menu-item {
   color: rgba(0, 0, 0, 0.1);
 }
 
+.main-catalog-wrapper {
+  background-image: linear-gradient(to right, rgb(238, 238, 238) calc(50% - 252px), transparent calc(50% - 252px));
+}
+
 .filters {
-  background-color: rgb(238, 238, 238);
+  /* backgrounsd-color: rgb(238, 238, 238); */
 }
 
 .filters-title {
   padding-top: 23px;
   padding-bottom: 23px;
-  background-color: rgb(220, 220, 220);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .price-range-description {
@@ -1384,6 +1387,7 @@ li:last-child .footer-nav-menu-item {
 .catalog-item {
   margin-right: 40px;
   margin-bottom: 45px;
+  font-size: 0;
 }
 
 .catalog-item:nth-child(even) {
@@ -1392,6 +1396,7 @@ li:last-child .footer-nav-menu-item {
 
 .item-pic-wrapper {
   margin-bottom: 33px;
+  font-size: 0;
 }
 
 .take-item {
@@ -1404,6 +1409,7 @@ li:last-child .footer-nav-menu-item {
   margin: 0;
   margin-top: 2px;
   margin-right: 20px;
+  font-size: 18px;
   vertical-align: top;
 }
 
@@ -1411,6 +1417,7 @@ li:last-child .footer-nav-menu-item {
   display: inline-block;
   width: 80px;
   margin: 0;
+  font-size: 16px;
   vertical-align: top;
   text-align: right;
 }

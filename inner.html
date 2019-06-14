@@ -88,145 +88,144 @@
       <li aria-current="page"><a>Моноподы для селфи</a></li>
     </ul>
 
-    <div class="catalog-columns container">
-      <section class="filters">
-        <h3 class="filters-title">Фильтр:</h3>
-        <form action="http://echo.htmlacademy.ru" method="post" oninput="min_output.value=price_min.value; max_output.value=price_max.value">
-
-          <fieldset class="price-range">
-            <legend>Стоимость</legend>
-            <input class="price-min price-control" id="price-min" type="number" name="price_min" min="0" step="1" value="0">
-            <input class="price-max price-control" id="price-max" type="number" name="price_max" min="0" step="1" value="5000">
-            <div class="price-range-description">
-              <label class="price-output" for="min-output">от </label>
-              <output id="min-output" name="min_output"></output>
-              <label class="price-output" for="max-output">до </label>
-              <output id="max-output" name="max_output"></output>
-            </div>
-          </fieldset>
-
-          <fieldset class="colors">
-            <legend>Цвет</legend>
-            <p>
-              <input id="color-1" type="checkbox" name="color" value="Черный" checked>
-              <label for="color-1">Черный</label>
-            </p>
-            <p>
-              <input id="color-2" type="checkbox" name="color" value="Белый">
-              <label for="color-2">Белый</label>
-            </p>
-            <p>
-              <input id="color-3" type="checkbox" name="color" value="Синий" checked>
-              <label for="color-3">Синий</label>
-            </p>
-            <p>
-              <input id="color-4" type="checkbox" name="color" value="Красный" checked>
-              <label for="color-4">Красный</label>
-            </p>
-            <p>
-              <input id="color-5" type="checkbox" name="color" value="Розовый">
-              <label for="color-5">Розовый</label>
-            </p>
-          </fieldset>
-
-          <fieldset class="bluetooth">
-            <legend>Bluetooth</legend>
-            <p>
-              <input id="bluetooth-1" type="radio" name="bluetooth" value="Есть" checked>
-              <label for="bluetooth-1">Есть</label>
-            </p>
-            <p>
-              <input id="bluetooth-2" type="radio" name="bluetooth" value="Нет">
-              <label for="bluetooth-2">Нет</label>
-            </p>
-          </fieldset>
-          <button class="btn" type="submit">Показать</button>
-        </form>
-      </section> <!-- filters -->
-
-      <section class="catalog">
-        <div class="sorter">
-          <h3 class="sorter-title">Сортировка:</h3>
-          <ul class="order-list">
-            <li class="order-item current"><a aria-current="true">По цене</a></li>
-            <li class="order-item"><a href="#">По типу</a></li>
-            <li class="order-item"><a href="#">По популярности</a></li>
-          </ul>
-          <ul class="sorter-controls">
-            <li class="sorter-arrow arrow-up"><a href="#">по убыванию</a></li>
-            <li class="sorter-arrow arrow-down current"><a aria-current="true">по возрастанию</a></li>
-          </ul>
-        </div> <!-- sorter -->
-
-        <h3 class="catalog-list visually-hidden">Выбранные товары:</h3>
-        <ul class="catalog-list">
-          <li class="catalog-item">
-            <div class="item-pic-wrapper">
-              <img src="img/catalog/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
-              <div class="take-item">
-                <button class="btn buy-item" type="button" name="buy-item" value="Любительская селфи-палка">В корзину</button>
-                <button class="compare-item" type="button" name="compare-item" value="Любительская селфи-палка">Добавить к сравнению</button>
+    <div class="main-catalog-wrapper">
+      <div class="catalog-columns container">
+        <section class="filters">
+          <h3 class="filters-title">Фильтр:</h3>
+          <form action="http://echo.htmlacademy.ru" method="post" oninput="min_output.value=price_min.value; max_output.value=price_max.value">
+            <fieldset class="price-range">
+              <legend>Стоимость</legend>
+              <input class="price-min price-control" id="price-min" type="number" name="price_min" min="0" step="1" value="0">
+              <input class="price-max price-control" id="price-max" type="number" name="price_max" min="0" step="1" value="5000">
+              <div class="price-range-description">
+                <label class="price-output" for="min-output">от </label>
+                <output id="min-output" name="min_output"></output>
+                <label class="price-output" for="max-output">до </label>
+                <output id="max-output" name="max_output"></output>
               </div>
-            </div>
-            <h4 class="item-name">
-              <a href="item.html">Любительская селфи-палка</a>
-            </h4><!--
-          --><p class="item-price">500 руб.</p>
-          </li>
-          <li class="catalog-item">
-            <div class="item-pic-wrapper">
-              <img src="img/catalog/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-              <div class="take-item">
-                <button class="btn buy-item" type="button" name="buy-item" value="Профессиональная селфи-палка">В корзину</button>
-                <button class="compare-item" type="button" name="compare-item" value="Профессиональная селфи-палка">Добавить к сравнению</button>
-              </div>
-            </div>
-            <h4 class="item-name">
-              <a href="item.html">Профессиональная селфи&#8209;палка</a>
-            </h4><!--
-          --><p class="item-price">1 500 руб.</p>
-          </li>
-          <li class="catalog-item">
-            <div class="item-pic-wrapper">
-              <img src="img/catalog/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-              <div class="take-item">
-                <button class="btn buy-item" type="button" name="buy-item" value="Непотопляемая селфи-палка">В корзину</button>
-                <button class="compare-item" type="button" name="compare-item" value="Непотопляемая селфи-палка">Добавить к сравнению</button>
-              </div>
-            </div>
-            <h4 class="item-name">
-              <a href="item.html">Непотопляемая селфи-палка</a>
-            </h4><!--
-          --><p class="item-price">2 500 руб.</p>
-          </li>
-          <li class="catalog-item">
-            <div class="item-pic-wrapper">
-              <img src="img/catalog/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
-              <div class="take-item">
-                <button class="btn buy-item" type="button" name="buy-item" value="Селфи-палка «Следуй за мной»">В корзину</button>
-                <button class="compare-item" type="button" name="compare-item" value="Селфи-палка «Следуй за мной»">Добавить к сравнению</button>
-              </div>
-            </div>
-            <h4 class="item-name">
-              <a href="item.html">Селфи-палка «Следуй за мной»</a>
-            </h4><!--
-          --><p class="item-price">4 900 руб.</p>
-          </li>
-        </ul> <!-- catalog-list -->
+            </fieldset>
 
-        <div class="paginator" aria-label="Листать страницы">
-          <a class="paginator-prev" href="#prev" aria-disabled="true">Назад</a>
-          <ul class="paginator-list">
-            <li class="paginator-item current"><a aria-current="page">1</a></li>
-            <li class="paginator-item"><a href="#">2</a></li>
-            <li class="paginator-item"><a href="#">3</a></li>
-          </ul>
-          <a class="paginator-next" href="#next">Вперед</a>
-        </div> <!-- paginator -->
+            <fieldset class="colors">
+              <legend>Цвет</legend>
+              <p>
+                <input id="color-1" type="checkbox" name="color" value="Черный" checked>
+                <label for="color-1">Черный</label>
+              </p>
+              <p>
+                <input id="color-2" type="checkbox" name="color" value="Белый">
+                <label for="color-2">Белый</label>
+              </p>
+              <p>
+                <input id="color-3" type="checkbox" name="color" value="Синий" checked>
+                <label for="color-3">Синий</label>
+              </p>
+              <p>
+                <input id="color-4" type="checkbox" name="color" value="Красный" checked>
+                <label for="color-4">Красный</label>
+              </p>
+              <p>
+                <input id="color-5" type="checkbox" name="color" value="Розовый">
+              </p>
+            </fieldset>
 
-      </section> <!-- catalog -->
+            <fieldset class="bluetooth">
+              <legend>Bluetooth</legend>
+              <p>
+                <input id="bluetooth-1" type="radio" name="bluetooth" value="Есть" checked>
+                <label for="bluetooth-1">Есть</label>
+              </p>
+              <p>
+                <input id="bluetooth-2" type="radio" name="bluetooth" value="Нет">
+                <label for="bluetooth-2">Нет</label>
+              </p>
+            </fieldset>
+            <button class="btn" type="submit">Показать</button>
+          </form>
+        </section> <!-- filters -->
+
+        <section class="catalog">
+          <div class="sorter">
+            <h3 class="sorter-title">Сортировка:</h3>
+            <ul class="order-list">
+              <li class="order-item current"><a aria-current="true">По цене</a></li>
+              <li class="order-item"><a href="#">По типу</a></li>
+              <li class="order-item"><a href="#">По популярности</a></li>
+            </ul>
+            <ul class="sorter-controls">
+              <li class="sorter-arrow arrow-up"><a href="#">по убыванию</a></li>
+              <li class="sorter-arrow arrow-down current"><a aria-current="true">по возрастанию</a></li>
+            </ul>
+          </div> <!-- sorter -->
+
+          <h3 class="catalog-list visually-hidden">Выбранные товары:</h3>
+          <ul class="catalog-list">
+            <li class="catalog-item">
+              <div class="item-pic-wrapper">
+                <img src="img/catalog/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+                <div class="take-item">
+                  <button class="btn buy-item" type="button" name="buy-item" value="Любительская селфи-палка">В корзину</button>
+                  <button class="compare-item" type="button" name="compare-item" value="Любительская селфи-палка">Добавить к сравнению</button>
+                </div>
+              </div>
+              <h4 class="item-name">
+                <a href="item.html">Любительская селфи-палка</a>
+              </h4>
+              <p class="item-price">500 руб.</p>
+            </li>
+            <li class="catalog-item">
+              <div class="item-pic-wrapper">
+                <img src="img/catalog/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+                <div class="take-item">
+                  <button class="btn buy-item" type="button" name="buy-item" value="Профессиональная селфи-палка">В корзину</button>
+                  <button class="compare-item" type="button" name="compare-item" value="Профессиональная селфи-палка">Добавить к сравнению</button>
+                </div>
+              </div>
+              <h4 class="item-name">
+                <a href="item.html">Профессиональная селфи&#8209;палка</a>
+              </h4>
+              <p class="item-price">1 500 руб.</p>
+            </li>
+            <li class="catalog-item">
+              <div class="item-pic-wrapper">
+                <img src="img/catalog/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+                <div class="take-item">
+                  <button class="btn buy-item" type="button" name="buy-item" value="Непотопляемая селфи-палка">В корзину</button>
+                  <button class="compare-item" type="button" name="compare-item" value="Непотопляемая селфи-палка">Добавить к сравнению</button>
+                </div>
+              </div>
+              <h4 class="item-name">
+                <a href="item.html">Непотопляемая селфи-палка</a>
+              </h4>
+              <p class="item-price">2 500 руб.</p>
+            </li>
+            <li class="catalog-item">
+              <div class="item-pic-wrapper">
+                <img src="img/catalog/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+                <div class="take-item">
+                  <button class="btn buy-item" type="button" name="buy-item" value="Селфи-палка «Следуй за мной»">В корзину</button>
+                  <button class="compare-item" type="button" name="compare-item" value="Селфи-палка «Следуй за мной»">Добавить к сравнению</button>
+                </div>
+              </div>
+              <h4 class="item-name">
+                <a href="item.html">Селфи-палка «Следуй за мной»</a>
+              </h4>
+              <p class="item-price">4 900 руб.</p>
+            </li>
+          </ul> <!-- catalog-list -->
+
+          <div class="paginator" aria-label="Листать страницы">
+            <a class="paginator-prev" href="#prev" aria-disabled="true">Назад</a>
+            <ul class="paginator-list">
+              <li class="paginator-item current"><a aria-current="page">1</a></li>
+              <li class="paginator-item"><a href="#">2</a></li>
+              <li class="paginator-item"><a href="#">3</a></li>
+            </ul>
+            <a class="paginator-next" href="#next">Вперед</a>
+          </div> <!-- paginator -->
+
+        </section> <!-- catalog -->
+      </div>
     </div>
-
   </main>
 
   <footer class="site-footer">

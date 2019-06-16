@@ -8,6 +8,7 @@
   <!-- <link rel="stylesheet" href="css/outline.css"> -->
   <link rel="stylesheet" href="css/style.css">
 
+
 </head>
 
 <body>
@@ -164,8 +165,7 @@
             </div>
           </div>
         </div>
-      </section>
-       <!-- promo-slider -->
+      </section> <!-- promo-slider -->
    <!-- </div> -->
 
     <section class="goodsgroups container">
@@ -283,8 +283,8 @@
     <div class="index-columns container">
       <section class="info">
         <h2 class="info-title">О нас</h2>
-        <p class="assortment-line info-line">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-        <p class="delivery-line info-line">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+        <p class="info-line">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+        <p class="info-line">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
         <ul class="shipping-companies-list">
           <li>Деловые Линии</li>
           <li>Автотрейдинг</li>
@@ -342,17 +342,19 @@
   <!--
 https://www.w3.org/TR/html/editing.html#inert-subtrees
 -->
-  <section class="modal feedback">
-    <h2>Написать отзыв</h2>
+  <!-- <section class="modal feedback">
+    <h2  class="visually-hidden">Написать отзыв</h2>
     <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-      <p class="feedback-item feedback-name">
-        <label for="feedback-name">Ваше имя:</label>
-        <input id="feedback-name" type="text" name="feedback-name" value="" placeholder="Имя Фамилия">
-      </p>
-      <p class="feedback-item feedback-email">
-        <label for="feedback-email">Ваш e-mail:</label>
-        <input id="feedback-email" type="email" name="feedback-email" value="" placeholder="email@example.com">
-      </p>
+      <div class="two-cols-wrapper">
+        <p class="feedback-item feedback-name">
+          <label for="feedback-name">Ваше имя:</label>
+          <input id="feedback-name" type="text" name="feedback-name" value="" placeholder="Имя Фамилия">
+        </p>
+        <p class="feedback-item feedback-email">
+          <label for="feedback-email">Ваш e-mail:</label>
+          <input id="feedback-email" type="email" name="feedback-email" value="" placeholder="email@example.com">
+        </p>
+    </div>
       <p class="feedback-item feedback-text">
         <label for="feedback-text">Текст письма:</label>
         <textarea id="feedback-text" name="feedback-text" rows="8" cols="80" placeholder="В свободной форме"></textarea>
@@ -360,12 +362,13 @@ https://www.w3.org/TR/html/editing.html#inert-subtrees
       <button class="btn feedback-button" type="submit">Отправить</button>
     </form>
     <button class="modal-close" type="button">
-      <span class="visually-hidden">Закрыть окно отзыва</span>X
+      <span class="visually-hidden">Закрыть окно отзыва</span>
     </button>
-  </section> <!-- feedback -->
+  </section> -->
+   <!-- feedback -->
 
-  <section class="modal map">
-    <h2>Как до нас добраться</h2>
+  <!-- <section class="modal map">
+    <h2   class="visually-hidden">Как до нас добраться</h2>
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779976!2d37.52742931592807!3d55.687030980535816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1559909970182!5m2!1sru!2sru"
       width="960" height="559" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -375,9 +378,10 @@ https://www.w3.org/TR/html/editing.html#inert-subtrees
     </figure>
 
     <button class="modal-close" type="button">
-      <span class="visually-hidden">Закрыть окно карты</span>X
+      <span class="visually-hidden">Закрыть окно карты</span>
     </button>
-  </section> <!-- map -->
+  </section> -->
+   <!-- map -->
 
   <script src=" js/script.js"></script>
 </body>

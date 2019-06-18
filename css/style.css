@@ -1453,6 +1453,7 @@ li:last-child .footer-nav-menu-item {
   text-align: right;
   color: rgb(70, 70, 70);
   letter-spacing: 0.01em;
+  align-self: flex-start;
 }
 
 .take-item {

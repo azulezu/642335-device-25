@@ -38,7 +38,7 @@
         </div>
       </div>
 
-      <nav class="header-navigation site-header-wrapper">
+      <nav class="header-navigation">
         <ul class="navigation-menu" role="menubar">
           <li class="drop-catalog">
             <a class="nav-menu-item drop-submenu"  href="inner.html" role="menuitem" aria-haspopup="true" aria-expanded="false">Каталог товаров
@@ -82,18 +82,15 @@
   </header>
 
   <main class="main-page" id="main-content">
-    <!--  поменять вложенность или убрать обертку-->
-    <!-- <div class="container"> -->
       <section class="promo-slider container" aria-roledescription="carousel">
-        <!--  -->
         <h2 class="promo-title visually-hidden">Хиты</h2>
         <input class="visually-hidden" type="radio" id="promo-btn-1" name="promo-btn" aria-posinset="1" aria-setsize="3" checked>
         <input class="visually-hidden" type="radio" id="promo-btn-2" name="promo-btn" aria-posinset="2" aria-setsize="3">
         <input class="visually-hidden" type="radio" id="promo-btn-3" name="promo-btn" aria-posinset="3" aria-setsize="3">
         <div class="promo-controls">
-          <label class="promo-label" for="promo-btn-1" aria-label="Первый слайд"></label>
-          <label class="promo-label" for="promo-btn-2" aria-label="Второй слайд"></label>
-          <label class="promo-label" for="promo-btn-3" aria-label="Последний слайд"></label>
+          <label class="promo-label" for="promo-btn-1"><span class="visually-hidden">Первый слайд</span></label>
+          <label class="promo-label" for="promo-btn-2"><span class="visually-hidden">Второй слайд</span></label>
+          <label class="promo-label" for="promo-btn-3"><span class="visually-hidden">Последний слайд</span></label>
         </div>
         <div class="promo-inner">
           <div class="promo-wrapper">
@@ -166,7 +163,6 @@
           </div>
         </div>
       </section> <!-- promo-slider -->
-   <!-- </div> -->
 
     <section class="goodsgroups container">
       <h2 class="visually-hidden">Категории товаров</h2>
@@ -235,8 +231,8 @@
           <label class="service-label btn" for="service-btn-3" tabindex="0">Кредит</label>
         </div>
 
-        <div class="service-inner">
-          <div class="service-slide-wrapper">
+        <!-- <div class="service-inner"> -->
+          <!-- <div class="service-slide-wrapper"> -->
             <div class="service-slide delivery">
               <h3 class="service-slide-title">Доставка</h3>
               <p class="service-info">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
@@ -249,8 +245,8 @@
               <h3 class="service-slide-title">Кредит</h3>
               <p class="service-info">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
             </div>
-          </div>
-        </div>
+          <!-- </div> -->
+        <!-- </div> -->
       </div>
     </section> <!-- service-slider -->
 

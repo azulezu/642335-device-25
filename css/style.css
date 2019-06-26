@@ -443,21 +443,19 @@ div.site-header-wrapper {
 }
 
 .drop-submenu {
-  /* padding-right: 32px; */
-}
-
-.drop-submenu::after {
-  content: "";
+  /* content: ""; */
   position: absolute;
   top: 4px;
-  right: 4px;
+  right: 5px;
   width: 16px;
   height: 16px;
   background-color: transparent;
   background-image: url("../img/icon/ico_plus.svg");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: center;
   visibility: visible;
+  opacity: 0.3;
+  border: none;
 }
 
 .catalog-submenu {

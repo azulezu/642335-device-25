@@ -9,7 +9,19 @@
 </head>
 
 <body class="inner-page">
-  <header class="site-header container">
+
+  <header style="position:relative;" class="site-header container">
+
+    <div style="display:none">
+      <div class="ruler" style="position:absolute;width:1px;height:3000px; background-color: rgba(255,0,0,0.5);top:0;left:20px;z-index:999"></div>
+      <div class="ruler" style="position:absolute;width:1px;height:3000px; background-color: rgba(255,0,0,0.5);top:0;left:80px;z-index:999"></div>
+      <div class="ruler" style="position:absolute;width:1px;height:3000px; background-color: rgba(255,0,0,0.5);top:0;left:280px;z-index:999"></div>
+      <div class="ruler" style="position:absolute;width:1px;height:3000px; background-color: rgba(255,0,0,0.5);top:0;left:348px;z-index:999"></div>
+      <div class="ruler" style="position:absolute;width:1px;height:3000px; background-color: rgba(255,0,0,0.5);top:0;left:420px;z-index:999"></div>
+    </div>
+
+
+
     <h1 class="visually-hidden">Каталог товаров магазина электронных гаджетов <span lang="en">«Device»</span></h1>
     <a class="goto-main" href="#main-content">Пропустить навигацию</a>
 
@@ -80,6 +92,7 @@
   </header>
 
   <main class="catalog-page" id="main-content">
+
     <h2 class="catalog-title container">Моноподы для селфи</h2>
     <ul class="breadcrumbs container" aria-label="Навигация. Вы находитесь здесь">
       <li><a href="index.html">Главная</a></li>
@@ -91,39 +104,45 @@
       <div class="catalog-columns container">
         <section class="filters">
           <h3 class="filters-title">Фильтр:</h3>
-          <form action="http://echo.htmlacademy.ru" method="post" oninput="min_output.value=price_min.value; max_output.value=price_max.value">
+          <form action="http://echo.htmlacademy.ru" method="post">
+
             <fieldset class="price-range">
               <legend>Стоимость</legend>
-              <input class="price-min price-control" id="price-min" type="number" name="price_min" min="0" step="1" value="0">
-              <input class="price-max price-control" id="price-max" type="number" name="price_max" min="0" step="1" value="5000">
-              <div class="price-range-description">
-                <label class="price-output" for="min-output">от </label>
-                <output id="min-output" name="min_output"></output>
-                <label class="price-output" for="max-output">до </label>
-                <output id="max-output" name="max_output"></output>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">от<input name="min-price" type="text" value="0"></label>
+                  <label class="max-price">до<input name="max-price" type="text" value="5000"></label>
+                </div>
               </div>
             </fieldset>
 
             <fieldset class="colors">
               <legend>Цвет</legend>
               <p>
-                <input id="color-1" type="checkbox" name="color" value="Черный" checked>
+                <input class="visually-hidden" id="color-1" type="checkbox" name="color" value="Черный" checked>
                 <label for="color-1">Черный</label>
               </p>
               <p>
-                <input id="color-2" type="checkbox" name="color" value="Белый">
+                <input class="visually-hidden" id="color-2" type="checkbox" name="color" value="Белый">
                 <label for="color-2">Белый</label>
               </p>
               <p>
-                <input id="color-3" type="checkbox" name="color" value="Синий" checked>
+                <input class="visually-hidden" id="color-3" type="checkbox" name="color" value="Синий" checked>
                 <label for="color-3">Синий</label>
               </p>
               <p>
-                <input id="color-4" type="checkbox" name="color" value="Красный" checked>
+                <input class="visually-hidden" id="color-4" type="checkbox" name="color" value="Красный" checked>
                 <label for="color-4">Красный</label>
               </p>
               <p>
-                <input id="color-5" type="checkbox" name="color" value="Розовый">
+                <input class="visually-hidden" id="color-5" type="checkbox" name="color" value="Розовый" disabled>
                 <label for="color-5">Розовый</label>
               </p>
             </fieldset>
@@ -131,11 +150,11 @@
             <fieldset class="bluetooth">
               <legend>Bluetooth</legend>
               <p>
-                <input id="bluetooth-1" type="radio" name="bluetooth" value="Есть" checked>
+                <input class="visually-hidden" id="bluetooth-1" type="radio" name="bluetooth" value="Есть" checked>
                 <label for="bluetooth-1">Есть</label>
               </p>
               <p>
-                <input id="bluetooth-2" type="radio" name="bluetooth" value="Нет">
+                <input class="visually-hidden" id="bluetooth-2" type="radio" name="bluetooth" value="Нет">
                 <label for="bluetooth-2">Нет</label>
               </p>
             </fieldset>
@@ -152,8 +171,16 @@
               <li class="order-item"><a href="#">По популярности</a></li>
             </ul>
             <ul class="sorter-controls">
-              <li class="sorter-arrow arrow-up"><a href="#">по убыванию</a></li>
-              <li class="sorter-arrow arrow-down current"><a aria-current="true">по возрастанию</a></li>
+              <li class="sorter-arrow arrow-up">
+                <a href="#">
+                  <img src="../img/icon/icon-up-dir.svg" alt="По возрастанию" width="11" height="10">
+                </a>
+              </li>
+              <li class="sorter-arrow arrow-down current">
+                <a aria-current="true">
+                  <img src="../img/icon/icon-down-dir.svg" alt="По убыванию" width="11" height="10">
+                </a>
+              </li>
             </ul>
           </div> <!-- sorter -->
 
@@ -199,7 +226,7 @@
               </h4>
               <p class="item-price">2 500 руб.</p>
             </li>
-            <li class="catalog-item">
+            <li class="catalog-item new">
               <div class="item-pic-wrapper">
                 <img src="img/catalog/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
                 <div class="take-item">
@@ -233,7 +260,7 @@
 <footer class="site-footer">
   <div class="container">
     <div class="site-footer-wrapper">
-      <a class="site-logo"><img src="img/footer/logo_yellow.svg" width="163" height="35" alt="Лого магазина Device" title="DEVICE"></a>
+      <a class="site-logo" href="index.html"><img src="img/footer/logo_yellow.svg" width="163" height="35" alt="Лого магазина Device" title="DEVICE"></a>
       <div class="footer-menu-wrapper">
         <ul class="user-menu" aria-label="Личный кабинет">
         <li class="login-link account"><a href="https://htmlacademy.ru/profile/id642335" target="_blank">Валентин Петухов</a></li>

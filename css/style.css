@@ -47,9 +47,9 @@
     url("../fonts/opensans/opensans.woff") format("woff");
 }
 
-/* ========================= */
-/*             доп. нормалайзер           */
-/* ========================= */
+/* ======================================= */
+/*             доп. нормалайзер            */
+/* ======================================= */
 img {
   max-width: 100%;
   height: auto;
@@ -87,16 +87,7 @@ h4 {
 }
 
 /* -------------------- */
-/* .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  border: 0;
-  clip: rect(0 0 0 0);
-} */
+
 .visually-hidden * {
   display: none;
 }
@@ -127,16 +118,6 @@ body {
   color: black;
 }
 
-/*         сделать нормально           */
-/* {
-  flex-grow: 0;
-  flex-shrink: 0;
-} */
-
-/* .main-page > .container:first-child {
-  position: relative;
-  padding-top: 481px;
-} */
 .user-menu,
 .shopping-menu,
 .navigation-menu,
@@ -194,14 +175,14 @@ body {
 }
 
 /*-------------------*/
-/*      кнопка      */
+/*      кнопка       */
 /*-------------------*/
 .btn {
   display: inline-block;
   padding-top: 8px;
+  padding-right: 0;
   padding-bottom: 8px;
   padding-left: 4px;
-  padding-right: 0;
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
@@ -234,7 +215,7 @@ body {
 }
 
 /*-------------------*/
-/*      шапка      */
+/*       шапка       */
 /*-------------------*/
 .main-search,
 .main-search input::placeholder,
@@ -279,10 +260,6 @@ body {
   top: 22px;
   left: 58px;
 }
-/*
-.inner-page .site-header .site-logo {
-  left: 58px;
-} */
 
 .site-header-wrapper,
 .header-navigation {
@@ -333,12 +310,10 @@ div.site-header-wrapper {
 
 .main-search input::placeholder {
   color: rgba(0, 0, 0, 0.3);
-  /* opacity: 1; */
 }
 
 .main-search input:hover::placeholder {
   color: rgba(0, 0, 0, 0.6);
-  /* opacity: 1; */
 }
 
 .main-search input:focus {
@@ -355,14 +330,12 @@ div.site-header-wrapper {
   padding-bottom: 13px;
   background-color: transparent;
   border: 2px solid black;
-  /* display: none; */
   opacity: 0;
 }
 
 .main-search input:focus + button {
   color: black;
   background-color: transparent;
-  /* display: block; */
   opacity: 1;
 }
 
@@ -438,17 +411,12 @@ div.site-header-wrapper {
   background-image: url("../img/icon/ico_cart.svg");
 }
 
-.header-navigation {
-  /* padding-bottom: 162px; */
-}
-
 .drop-catalog {
   position: relative;
   padding-right: 32px;
 }
 
 .drop-submenu {
-  /* content: ""; */
   position: absolute;
   top: 4px;
   right: 5px;
@@ -458,9 +426,9 @@ div.site-header-wrapper {
   background-image: url("../img/icon/ico_plus.svg");
   background-repeat: no-repeat;
   background-position: center;
+  border: none;
   visibility: visible;
   opacity: 0.3;
-  border: none;
 }
 
 .catalog-submenu {
@@ -473,7 +441,6 @@ div.site-header-wrapper {
   padding-bottom: 40px;
   padding-left: 60px;
   background: linear-gradient(rgba(240, 197, 46, 0.5) 0, rgba(240, 197, 46, 0.5) 100%), white;
-  /* background: white; */
 }
 
 .catalog-submenu > li:first-child {
@@ -606,9 +573,6 @@ div.site-header-wrapper {
   padding-top: 5px;
 }
 
-/* .footer-nav-menu-item {
-  margin-right: 34px;
-} */
 .footer-navigation-menu li {
   margin-right: 34px;
 }
@@ -619,8 +583,6 @@ div.site-header-wrapper {
 
 .site-footer-wrapper:last-of-type::before {
   content: "";
-  /* position: relative; */
-  /* top: 12px; */
   align-self: center;
   width: 80px;
   height: 7px;
@@ -632,7 +594,6 @@ div.site-header-wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* width: 156px; */
   margin: 0;
   padding: 0;
 }
@@ -651,8 +612,8 @@ div.site-header-wrapper {
   height: 36px;
   vertical-align: top;
   background-repeat: no-repeat;
-  background-size: 32px 32px;
   background-position: 1px 2px;
+  background-size: 32px 32px;
   opacity: 0.3;
 }
 
@@ -686,7 +647,7 @@ div.site-header-wrapper {
 }
 
 /*---------------------------------*/
-/*       Промо слайдер      */
+/*         Промо слайдер           */
 /*---------------------------------*/
 .promo-slider {
   position: relative;
@@ -727,13 +688,6 @@ div.site-header-wrapper {
   background-color: white;
   border: 1px solid black;
   border-radius: 50%;
-}
-
-.promo-slider input[type="radio"] {
-  /* ????????? как правильно прятать ???????  */
-  /* при применении visually-hidden неактивен */
-  /* position: inherit;
-  margin: -3px; */
 }
 
 .promo-slide {
@@ -784,7 +738,7 @@ div.site-header-wrapper {
   left: 0;
   width: 100px;
   height: 7px;
-  background-color: #ffffff;
+  background-color: white;
 }
 
 .promo-slogan {
@@ -857,9 +811,9 @@ div.site-header-wrapper {
   width: 220px;
 }
 
-/* --------------------------------------------- */
-/*  Стили для проверки слайдера  */
-/* -------------------------------------------- */
+/* ------------------------------- */
+/*  Стили для проверки слайдера    */
+/* ------------------------------- */
 #promo-btn-1:checked ~ .promo-controls .promo-label[for="promo-btn-1"]::before {
   z-index: 1;
 }
@@ -896,7 +850,7 @@ div.site-header-wrapper {
 }
 
 /*---------------------------------*/
-/*       Группы товаров      */
+/*         Группы товаров          */
 /*---------------------------------*/
 .goodsgroups {
   margin-bottom: 81px;
@@ -919,7 +873,6 @@ div.site-header-wrapper {
 }
 
 .goodsgroups-item-pic-wrapper {
-  /* width: 160px; */
   height: 160px;
   margin-bottom: 33px;
   text-align: center;
@@ -978,7 +931,7 @@ div.site-header-wrapper {
 }
 
 /*---------------------------------*/
-/*    Слайдер сервисов    */
+/*          Слайдер сервисов       */
 /*---------------------------------*/
 .service-slider {
   margin-bottom: 94px;
@@ -1040,14 +993,6 @@ div.site-header-wrapper {
   background-image: none;
 }
 
-/*
-.service-inner {
-  width: 700px;
-  padding-top: 56px;
-} */
-/* .service-slide-wrapper {
-  display: flex;
-} */
 .service-slide {
   display: none;
   width: 714px;
@@ -1094,9 +1039,6 @@ div.site-header-wrapper {
   background-position: right 20px top 60px;
 }
 
-/* .service-slider input:checked ~ .service-inner .service-slide {
-  order: 2;
-} */
 #service-btn-1:checked ~ .delivery {
   display: block;
 }
@@ -1110,7 +1052,7 @@ div.site-header-wrapper {
 }
 
 /*---------------------------------*/
-/*        лого брендов         */
+/*          лого брендов           */
 /*---------------------------------*/
 .brends {
   margin-bottom: 97px;
@@ -1145,7 +1087,6 @@ div.site-header-wrapper {
 /*---------------------------------*/
 .index-columns {
   display: flex;
-  /* justify-content: space-between; */
   margin-bottom: 82px;
   color: black;
   background-color: white;
@@ -1219,7 +1160,6 @@ div.site-header-wrapper {
   background-image: url("../img/mainpage/list-button.svg");
   background-repeat: no-repeat;
   background-position: 0 50%;
-  /* background-size: 100%; */
 }
 
 .info-line {
@@ -1402,7 +1342,7 @@ div.site-header-wrapper {
 .range-controls .bar {
   width: 58%;
   height: 2px;
-  margin-left: 0%;
+  margin-left: 0;
   background: rgb(145, 201, 47);
 }
 
@@ -1442,22 +1382,22 @@ div.site-header-wrapper {
   font-size: 14px;
   line-height: 24px;
   font-family: "Gilroy", "Helvetica", sans-serif;
+  vertical-align: top;
   color: rgba(0, 0, 0, 0.2);
   letter-spacing: 0;
-  vertical-align: top;
 }
 
 .price-controls .min-price {
-  /* (длина шкалы - отступы) x мин.цена%   */
-  margin-left: calc((196 - 40) * (0 / 100));
   /*  кол-во разрядов в цене х 9px */
   margin-right: 9px;
+  /* (длина шкалы - отступы) x мин.цена%   */
+  margin-left: calc((196 - 40) * (0 / 100));
 }
 
 .price-controls .max-price {
+  position: absolute;
   /* (длина шкалы - отступы) x мин.цена%   */
   left: calc((196 - 40) * (58px) / 100);
-  position: absolute;
 }
 
 .price-controls input {
@@ -1465,12 +1405,12 @@ div.site-header-wrapper {
   margin-left: 4px;
   padding: 0;
   font: inherit;
+  vertical-align: top;
   text-align: left;
   color: inherit;
   letter-spacing: 0;
   background: transparent;
   border: none;
-  vertical-align: top;
 }
 
 .price-controls .min-price input {
@@ -1479,13 +1419,6 @@ div.site-header-wrapper {
   /* max-width = 9px x десятичн.разрядов в числе */
   max-width: 9px;
 }
-
-.price-controls .max-price input {
-  /* min-width = 9px x десятичн.разрядов в числе */
-  /* min-width: 36px; */
-  /* max-width: 0; */
-}
-
 
 .filters .colors,
 .filters .bluetooth {
@@ -1533,10 +1466,10 @@ div.site-header-wrapper {
   position: absolute;
   top: -4px;
   left: 1px;
-  background-position: 0 0;
   width: 25px;
   height: 25px;
   background-image: url("../img/catalog/radio-off.svg");
+  background-position: 0 0;
 }
 
 .bluetooth label::after {
@@ -1545,10 +1478,10 @@ div.site-header-wrapper {
   top: -4px;
   left: 1px;
   display: none;
-  background-position: 0 0;
   width: 25px;
   height: 25px;
   background-image: url("../img/catalog/radio-on.svg");
+  background-position: 0 0;
 }
 
 .colors input[type="checkbox"]:disabled + label,
@@ -1573,13 +1506,6 @@ div.site-header-wrapper {
   opacity: 0.6;
 }
 
-/* .colors label:focus::before,
-.colors label:focus::after,
-.bluetooth label:focus::before,
-.bluetooth label:focus::after {
-  opacity: 1;
-  outline: 1px dotted blue;
-} */
 .colors label:active::before,
 .colors label:active::after,
 .bluetooth label:active::before,
@@ -1673,7 +1599,7 @@ div.site-header-wrapper {
 }
 
 /*---------------------------------*/
-/*     Карточка товара      */
+/*        Карточка товара          */
 /*---------------------------------*/
 .catalog-list {
   display: flex;
@@ -1803,7 +1729,7 @@ div.site-header-wrapper {
 }
 
 /*---------------------------------*/
-/*           Пагинатор           */
+/*           Пагинатор             */
 /*---------------------------------*/
 .paginator {
   display: flex;
@@ -1914,7 +1840,7 @@ div.site-header-wrapper {
 }
 
 /*---------------------------------*/
-/*         Окно отзыва         */
+/*           Окно отзыва           */
 /*---------------------------------*/
 .feedback {
   z-index: 100;
@@ -2017,7 +1943,7 @@ div.site-header-wrapper {
 }
 
 /*---------------------------------*/
-/*          Окно карты          */
+/*           Окно карты            */
 /*---------------------------------*/
 .map {
   z-index: 100;

@@ -276,12 +276,13 @@ body {
 
 .site-header .site-logo {
   position: absolute;
-  top: 23px;
-}
-
-.inner-page .site-header .site-logo {
+  top: 22px;
   left: 58px;
 }
+/*
+.inner-page .site-header .site-logo {
+  left: 58px;
+} */
 
 .site-header-wrapper,
 .header-navigation {
@@ -408,8 +409,6 @@ div.site-header-wrapper {
   position: absolute;
   top: 0;
   left: 0;
-  width: 13px;
-  height: 13px;
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -418,18 +417,24 @@ div.site-header-wrapper {
 .login a::before,
 .account a::before {
   top: 4px;
+  width: 13px;
+  height: 12px;
   background-image: url("../img/icon/ico_user.svg");
 }
 
 .compare a::before {
   top: 6px;
   left: 5px;
+  width: 10px;
+  height: 10px;
   background-image: url("../img/icon/ico_compare.svg");
 }
 
 .cart a::before {
   top: 4px;
   left: 3px;
+  width: 12px;
+  height: 12px;
   background-image: url("../img/icon/ico_cart.svg");
 }
 
@@ -633,7 +638,7 @@ div.site-header-wrapper {
 }
 
 .footer-social li {
-  margin-right: 22px;
+  margin-right: 20px;
 }
 
 .footer-social li:last-of-type {
@@ -642,11 +647,12 @@ div.site-header-wrapper {
 
 .social-button {
   display: inline-block;
-  width: 32px;
-  height: 32px;
+  width: 34px;
+  height: 36px;
   vertical-align: top;
   background-repeat: no-repeat;
   background-size: 32px 32px;
+  background-position: 1px 2px;
   opacity: 0.3;
 }
 
@@ -1526,7 +1532,8 @@ div.site-header-wrapper {
   content: "";
   position: absolute;
   top: -4px;
-  left: 0;
+  left: 1px;
+  background-position: 0 0;
   width: 25px;
   height: 25px;
   background-image: url("../img/catalog/radio-off.svg");
@@ -1536,8 +1543,9 @@ div.site-header-wrapper {
   content: "";
   position: absolute;
   top: -4px;
-  left: 0;
+  left: 1px;
   display: none;
+  background-position: 0 0;
   width: 25px;
   height: 25px;
   background-image: url("../img/catalog/radio-on.svg");

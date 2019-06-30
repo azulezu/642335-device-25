@@ -11,13 +11,14 @@ drop.addEventListener("click", function(evt) {
 var isStorageSupport = true;
 var storageLogin = "";
 var storageEmail = "";
+var overlay = document.querySelector(".overlay");
 
 var feedback = document.querySelector(".feedback");
 
 if (feedback) {
-  var feedback_close = feedback.querySelector(".modal-close");
   var feedback_link = document.querySelector(".feedback-link");
 
+  var feedback_close = feedback.querySelector(".modal-close");
   var form = feedback.querySelector(".feedback-form");
   var login = feedback.querySelector("[name=feedback-name]");
   var email = feedback.querySelector("[name=feedback-email]");
@@ -33,6 +34,7 @@ if (feedback) {
   // показать форму
   feedback_link.addEventListener("click", function(evt) {
     evt.preventDefault();
+    overlay.classList.add("overlay-show");
     feedback.classList.add("modal-show");
     login.focus();
     // если есть запись в хранилище,
@@ -61,10 +63,13 @@ if (feedback) {
         feedback.offsetWidth = feedback.offsetWidth;
         feedback.classList.add("modal-error");
       }  // все введено правильно
-      else if (isStorageSupport) {
-        console.log("Запишу в хранилище " + login.value);
-        localStorage.setItem("login", login.value);
-        localStorage.setItem("email", email.value);
+      else {
+        if (isStorageSupport) {
+          console.log("Запишу в хранилище " + login.value);
+          localStorage.setItem("login", login.value);
+          localStorage.setItem("email", email.value);
+        }
+        overlay.classList.remove("overlay-show");
       }
     });
 
@@ -77,6 +82,7 @@ if (feedback) {
       feedback.classList.remove("modal-error");
     }
     feedback.classList.remove("modal-show");
+    overlay.classList.remove("overlay-show");
   });
 
   //  скрыть по эскейпу
@@ -87,6 +93,7 @@ if (feedback) {
         feedback.classList.remove("modal-error");
       }
       feedback.classList.remove("modal-show");
+      overlay.classList.remove("overlay-show");
     }
   });
 }
@@ -101,6 +108,7 @@ if (map) {
   // показать форму
   map_link.addEventListener("click", function(evt) {
     evt.preventDefault();
+    overlay.classList.add("overlay-show");
     map.classList.add("modal-show");
   });
 
@@ -108,7 +116,7 @@ if (map) {
   map_close.addEventListener("click", function(evt) {
     evt.preventDefault();
     map.classList.remove("modal-show");
-
+    overlay.classList.remove("overlay-show");
   });
 
   //  скрыть по эскейпу
@@ -116,6 +124,7 @@ if (map) {
     if (evt.keyCode === 27) {
       evt.preventDefault();
       map.classList.remove("modal-show");
+      overlay.classList.remove("overlay-show");
     }
   });
 }

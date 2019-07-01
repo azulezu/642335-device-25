@@ -1082,6 +1082,35 @@ div.site-header-wrapper {
   filter: none;
 }
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  /* стили только для IE 10 и выше */
+  .brends-item-pic {
+    opacity: 0;
+  }
+
+  .brends-item:nth-child(1) {
+    background-image: url("../img/mainpage/logo-1_bw.png");
+  }
+
+  .brends-item:nth-child(2) {
+    background-image: url("../img/mainpage/logo-2_bw.png");
+  }
+
+  .brends-item:nth-child(3) {
+    background-image: url("../img/mainpage/logo-3_bw.png");
+  }
+
+  .brends-item:nth-child(4) {
+    background-image: url("../img/mainpage/logo-4_bw.png");
+  }
+
+  .brends-item-pic:hover,
+  .brends-item-pic:active {
+    opacity: 1;
+  }
+}
+
+
 /*---------------------------------*/
 /*          Инфо и карта           */
 /*---------------------------------*/

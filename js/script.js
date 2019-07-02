@@ -26,7 +26,8 @@ if (feedback) {
 
   //  хранилище работает?
   try {
-    storage = localStorage.getItem("login");
+    storageLogin = localStorage.getItem("login");
+    storageEmail = localStorage.getItem("email");
   } catch (err) {
     isStorageSupport = false;
   }
@@ -42,14 +43,12 @@ if (feedback) {
     if (storageLogin) {
       login.value = storageLogin;
       email.focus();
+      if (storageEmail) {
+        email.value = storageEmail;
+        text.focus();
+      }
     } else {
-        if (storageEmail) {
-          email.value = storageEmail;
-          text.focus();
-        } else
-        {
           login.focus();
-        }
     }
 
     //  проверка и отправка
@@ -105,7 +104,7 @@ if (map) {
   var map_close = map.querySelector(".modal-close");
   var map_link = document.querySelector(".map-link");
 
-  // показать форму
+  // показать карту
   map_link.addEventListener("click", function(evt) {
     evt.preventDefault();
     overlay.classList.add("overlay-show");

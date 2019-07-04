@@ -918,20 +918,19 @@ div.site-header-wrapper {
   margin-bottom: 81px;
 }
 
+.goodsgroups-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -40px;
+}
+
 .goodsgroups-item {
-  width: 160px;
   margin-left: 40px;
 }
 
-.goodsgroups-item-line {
-  /* width: 160px; */
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 24px;
-  font-family: "Gilroy", "Helvetica", sans-serif;
-  color: black;
-  letter-spacing: 0.01em;
-  word-wrap: break-word;
+.goodsgroups-item-link {
+  display: block;
+  width: 160px;
 }
 
 .goodsgroups-item-pic-wrapper {
@@ -939,25 +938,37 @@ div.site-header-wrapper {
   margin-bottom: 33px;
   text-align: center;
   background-color: rgba(240, 197, 45, 0.5);
+  pointer-events: none;
 }
 
 .goodsgroups-item:hover .goodsgroups-item-pic-wrapper {
   background-color: rgb(240, 197, 45);
 }
 
-.goodsgroups-item a:focus {
+.goodsgroups-item-link:focus {
   outline: none;
 }
 
-.goodsgroups-item a:focus .goodsgroups-item-pic-wrapper {
+.goodsgroups-item-link:focus .goodsgroups-item-pic-wrapper {
   background-color: rgb(240, 197, 45);
 }
 
-.goodsgroups-item:active .goodsgroups-item-line {
+.goodsgroups-item-line {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Gilroy", "Helvetica", sans-serif;
+  color: black;
+  letter-spacing: 0.01em;
+  word-wrap: break-word;
+  pointer-events: none;
+}
+
+.goodsgroups-item-link:active .goodsgroups-item-line {
   opacity: 0.3;
 }
 
-.goodsgroups-item:active .goodsgroups-item-pic {
+.goodsgroups-item-link:active .goodsgroups-item-pic {
   opacity: 0.3;
 }
 
@@ -988,12 +999,6 @@ div.site-header-wrapper {
 .goodsgroups-item-pic[src$="popular-6.svg"] {
   margin-top: 49px;
   margin-left: -2px;
-}
-
-.goodsgroups-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -40px;
 }
 
 /*---------------------------------*/

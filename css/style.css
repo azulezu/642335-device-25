@@ -1611,32 +1611,13 @@ div.site-header-wrapper {
 input[name="color"]:focus + label,
 input[name="bluetooth"]:focus + label {
   outline: 1px dotted black;
-}
-
-/* Chrome и Firefox */
-@media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
-  input[name="color"]:focus + label,
-  input[name="bluetooth"]:focus + label {
-    outline: none;
-    box-shadow: 0 0 1px 4px rgb(238, 238, 238),
-      0 0 2px 5px rgb(77, 144, 254);
-  }
-}
-
-/* Firefox */
-@media screen and (min--moz-device-pixel-ratio: 0) {
-  input[name="color"]:focus + label,
-  input[name="bluetooth"]:focus + label {
-    outline: thin dotted black;
-    box-shadow: none;
-  }
+  outline: -webkit-focus-ring-color auto 1px;
 }
 
 /*---------------------------------*/
 input[name="color"]:active + label,
 input[name="bluetooth"]:active + label {
   outline: none;
-  box-shadow: none;
 }
 
 .colors label:active::before,

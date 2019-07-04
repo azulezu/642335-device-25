@@ -1489,18 +1489,18 @@ div.site-header-wrapper {
 }
 
 .price-controls .min-price {
-  /* В IE не работает translateX ??? */
   position: relative;
   /* ползунок в начале шкалы */
-  transform: translateX(calc(196px * (0) / 100));
+  /* transform: translateX(calc(196px * (0) / 100)); */
 }
 
 .price-controls .max-price {
-  /* В IE не работает translateX ??? */
   position: relative;
-  right: -40px;
+  right: -37px;
   /* ползунок смещен на 58% */
-  transform: translateX(calc(-196px * (100 - 58) / 100));
+  /* transform: translateX(calc(-196px * (100 - 58) / 100)); */
+  /* то же, что и строка выше, т.к. calc не отрабатывает в IE */
+  transform: translateX(-196px) translateX(113.68px);
 }
 
 .price-controls input {

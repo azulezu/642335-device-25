@@ -146,7 +146,7 @@ body {
 .site-logo:hover,
 .footer-copyright:hover,
 .user-menu-item:hover,
-.shopping-men-item:hover,
+.shopping-menu-item:hover,
 .nav-menu-item:hover,
 .footer-nav-menu-item:hover,
 .goodsgroup-menu-item:hover {
@@ -241,9 +241,11 @@ body {
   font-size: 18px;
   line-height: 24px;
   font-family: "Gilroy", "Helvetica", sans-serif;
+  vertical-align: top;
   text-transform: uppercase;
   letter-spacing: 0.2em;
 }
+
 
 .header-menu {
   position: relative;
@@ -258,6 +260,10 @@ body {
   position: absolute;
   top: 22px;
   left: 60px;
+}
+
+.site-logo img {
+  vertical-align: top;
 }
 
 .site-header-wrapper,
@@ -409,6 +415,7 @@ div.site-header-wrapper {
 .user-menu-item a {
   position: relative;
   padding-left: 25px;
+  vertical-align: top;
 }
 
 .shopping-menu-item:last-of-type,
@@ -769,15 +776,12 @@ div.site-header-wrapper {
   width: 600px;
   height: 486px;
   padding-right: 36px;
-  vertical-align: top;
   text-align: center;
 }
 
 .promo-pic-wrapper img {
   max-width: 100%;
   max-height: 100%;
-  /*  IE ??????? */
-
   object-fit: scale-down;
 }
 
@@ -1349,24 +1353,24 @@ div.site-header-wrapper {
   background-color: white;
 }
 
-.breadcrumbs li {
+.breadcrumbs-item {
   position: relative;
   padding-right: 38px;
 }
 
-.breadcrumbs li:last-child {
+.breadcrumbs-item:last-child {
   padding-right: 0;
 }
 
-.breadcrumbs li:hover {
+.breadcrumbs-item:hover {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.breadcrumbs li:active {
+.breadcrumbs-item:active {
   color: rgba(0, 0, 0, 0.1);
 }
 
-.breadcrumbs li::after {
+.breadcrumbs-item::after {
   content: "";
   position: absolute;
   top: 10px;
@@ -1378,8 +1382,12 @@ div.site-header-wrapper {
   opacity: 1;
 }
 
-.breadcrumbs li:last-child::after {
+.breadcrumbs-item:last-child::after {
   display: none;
+}
+
+.breadcrumbs-item a {
+  vertical-align: top;
 }
 
 /*---------------------------------*/
@@ -1669,7 +1677,8 @@ input[name="bluetooth"]:active + label {
   list-style: none;
 }
 
-.order-item {
+.order-item a {
+  display: block;
   padding-right: 15px;
   padding-left: 15px;
   font-weight: 400;
@@ -1691,28 +1700,28 @@ input[name="bluetooth"]:active + label {
   font-size: 0;
 }
 
-.sorter-arrow {
+.sorter-arrow a {
   display: block;
   padding-top: 2px;
   font-size: 14px;
   line-height: 18px;
-  vertical-align: top;
   color: black;
   opacity: 0.3;
+  user-select: none;
 }
 
-.order-item.current,
-.sorter-arrow.current {
+.order-item .current,
+.sorter-arrow .current {
   opacity: 1;
 }
 
-.order-item:hover,
-.sorter-arrow:hover {
+.order-item a:hover,
+.sorter-arrow a:hover {
   opacity: 0.6;
 }
 
-.order-item:active,
-.sorter-arrow:active {
+.order-item a:active,
+.sorter-arrow a:active {
   opacity: 1;
 }
 
@@ -1806,6 +1815,10 @@ input[name="bluetooth"]:active + label {
   line-height: 24px;
   font-family: "Gilroy", "Helvetica", sans-serif;
   letter-spacing: 0.01em;
+}
+
+.item-name {
+  vertical-align: top;
 }
 
 .catalog-item .item-price {
@@ -1924,6 +1937,10 @@ input[name="bluetooth"]:active + label {
 .paginator-item:nth-of-type(11),
 .paginator-item:last-of-type {
   margin-right: 0;
+}
+
+.paginator-item a {
+  vertical-align" top;
 }
 
 /*===========================*/

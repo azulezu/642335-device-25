@@ -5,7 +5,6 @@
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <!-- <link rel="stylesheet" href="css/outline.css"> -->
   <link rel="stylesheet" href="css/style.css">
 
 
@@ -29,11 +28,11 @@
 
         <div class="nav-menu-wrapper">
           <ul class="user-menu" aria-label="Личный кабинет">
-            <li class="login-link login"><a href="#">Войти</a></li>
+            <li class="user-menu-item login"><a href="#">Войти</a></li>
           </ul> <!-- user-menu -->
           <ul class="shopping-menu" aria-label="Отмеченные товары">
-            <li class="compare"><a href="#">Сравнить</a></li>
-            <li class="cart"><a href="#">Корзина</a></li>
+            <li class="shopping-menu-item compare"><a href="#">Сравнить</a></li>
+            <li class="shopping-menu-item cart"><a href="#">Корзина</a></li>
           </ul> <!-- shopping-menu -->
         </div>
       </div>
@@ -47,20 +46,20 @@
             <ul class="catalog-submenu container visually-hidden" role="menu" aria-label="Группы товаров">
               <li>
                 <ul class="goodsgroup-menu">
-                  <li><a class="vr-link" href="inner.html" role="menuitem">Виртуальная реальность</a></li>
-                  <li><a class="monopods-link" href="inner.html" role="menuitem">Моноподы для селфи</a></li>
-                  <li><a class="cameras-link" href="inner.html" role="menuitem">Экшн-камеры</a></li>
+                  <li class="goodsgroup-menu-item"><a class="vr-link" href="inner.html" role="menuitem">Виртуальная реальность</a></li>
+                  <li class="goodsgroup-menu-item"><a class="monopods-link" href="inner.html" role="menuitem">Моноподы для селфи</a></li>
+                  <li class="goodsgroup-menu-item"><a class="cameras-link" href="inner.html" role="menuitem">Экшн-камеры</a></li>
                 </ul>
               </li>
               <li>
                 <ul class="goodsgroup-menu">
-                  <li><a class="fitbracelets-link" href="inner.html" role="menuitem">Фитнеc-браслеты</a></li>
-                  <li><a class="smartwatches-link" href="inner.html" role="menuitem">Умные часы</a></li>
+                  <li class="goodsgroup-menu-item"><a class="fitbracelets-link" href="inner.html" role="menuitem">Фитнеc-браслеты</a></li>
+                  <li class="goodsgroup-menu-item"><a class="smartwatches-link" href="inner.html" role="menuitem">Умные часы</a></li>
                 </ul>
               </li>
               <li>
                 <ul class="goodsgroup-menu">
-                  <li><a class="quadcopters-link" href="inner.html" role="menuitem">Квадрокоптеры</a></li>
+                  <li class="goodsgroup-menu-item"><a class="quadcopters-link" href="inner.html" role="menuitem">Квадрокоптеры</a></li>
                 </ul>
               </li>
             </ul>
@@ -307,11 +306,17 @@
         <a class="site-logo"><img src="img/footer/logo_yellow.svg" width="163" height="35" alt="Лого магазина Device" title="DEVICE"></a>
         <div class="footer-menu-wrapper">
           <ul class="user-menu" aria-label="Личный кабинет">
-            <li class="login-link login"><a href="#">Войти</a></li>
+            <li class="user-menu-item login">
+              <a class="footer-menu-link" href="#">Войти</a>
+            </li>
           </ul> <!-- user-menu -->
           <ul class="shopping-menu" aria-label="Отмеченные товары">
-            <li class="compare"><a href="#">Сравнить</a></li>
-            <li class="cart"><a href="#">Корзина</a></li>
+            <li class="shopping-menu-item compare">
+              <a class="footer-menu-link" href="#">Сравнить</a>
+            </li>
+            <li class="shopping-menu-item cart">
+              <a class="footer-menu-link" href="#">Корзина</a>
+            </li>
           </ul> <!-- shopping-menu -->
         </div>
       </div>

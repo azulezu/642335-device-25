@@ -195,7 +195,6 @@ body {
 /*       шапка       */
 /*-------------------*/
 .main-search,
-.main-search input::placeholder,
 .user-menu,
 .shopping-menu {
   font-weight: 300;
@@ -311,14 +310,38 @@ div.site-header-wrapper {
 }
 
 .main-search input:-ms-input-placeholder {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  font-family: "Open Sans", "Verdana", sans-serif;
   color: rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.01em;
+}
+
+.main-search input::-ms-input-placeholder {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  font-family: "Open Sans", "Verdana", sans-serif;
+  color: rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.01em;
 }
 
 .main-search input::placeholder {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  font-family: "Open Sans", "Verdana", sans-serif;
   color: rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.01em;
 }
 
+
 .main-search input:hover:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.main-search input:hover::-ms-input-placeholder {
   color: rgba(0, 0, 0, 0.6);
 }
 
@@ -434,6 +457,10 @@ div.site-header-wrapper {
   background-image: url("../img/icon/ico_cart.svg");
 }
 
+.account a {
+  word-break: break-word;
+}
+
 .navigation-menu li,
 .footer-navigation-menu li,
 .logistic-menu li,
@@ -488,8 +515,9 @@ div.site-header-wrapper {
 
 .goodsgroup-menu a {
   vertical-align: top;
-  white-space: nowrap;
+  word-wrap: break-word;
 }
+
 
 .logistic-menu {
   display: flex;
@@ -801,7 +829,6 @@ div.site-header-wrapper {
   letter-spacing: 0.01em;
 }
 
-
 .promo-line {
   display: block;
   width: 490px;
@@ -813,7 +840,6 @@ div.site-header-wrapper {
   font-family: "Open Sans", "Verdana", sans-serif;
   letter-spacing: 0.01em;
 }
-
 
 .promo-details {
   margin-top: 49px;
@@ -1021,6 +1047,8 @@ div.site-header-wrapper {
   margin-bottom: 24px;
   padding-left: 4px;
   cursor: pointer;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
 }
 
@@ -1311,7 +1339,7 @@ div.site-header-wrapper {
   right: 0;
   left: 0;
   height: 70px;
-  background: rgba(0, 0, 0, 0.08);
+  background-color: rgba(0, 0, 0, 0.08);
 }
 
 .catalog-columns {
@@ -1458,7 +1486,7 @@ div.site-header-wrapper {
   width: 58%;
   height: 2px;
   margin-left: 0;
-  background: rgb(145, 201, 47);
+  background-color: rgb(145, 201, 47);
 }
 
 .range-controls .toggle {
@@ -1552,6 +1580,8 @@ div.site-header-wrapper {
   color: black;
   letter-spacing: 0.01em;
   cursor: pointer;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
 }
 
@@ -1721,6 +1751,8 @@ input[name="bluetooth"]:active + label {
   line-height: 18px;
   color: black;
   opacity: 0.3;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
 }
 
@@ -2084,6 +2116,22 @@ input[name="bluetooth"]:active + label {
   font-size: 18px;
   line-height: 24px;
   font-family: "Gilroy", "Helvetica", sans-serif;
+}
+
+.feedback *:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Open Sans", "Verdana", sans-serif;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.feedback *::-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Open Sans", "Verdana", sans-serif;
+  color: rgba(0, 0, 0, 0.4);
 }
 
 .feedback *::placeholder {

@@ -48,7 +48,7 @@
 }
 
 /* ======================================= */
-/*             доп. нормалайзер            */
+/*          доп. глобальные стили          */
 /* ======================================= */
 img {
   max-width: 100%;
@@ -65,30 +65,9 @@ html {
   box-sizing: inherit;
 }
 
-/* -------------------- */
 a {
   color: inherit;
   text-decoration: none;
-}
-
-p {
-  display: block;
-  margin: 0;
-}
-
-li {
-  margin: 0;
-}
-
-h2,
-h3,
-h4 {
-  margin: 0;
-}
-
-/* -------------------- */
-.visually-hidden * {
-  display: none;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -105,12 +84,11 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   clip-path: inset(100%);
 }
-
 /* ========================= */
+
 body {
   min-width: 1200px;
   margin: 0;
-  /* margin-top: 20px; */
   font-size: 15px;
   line-height: inherit;
   font-family: "Open Sans", "Verdana", sans-serif;
@@ -246,7 +224,6 @@ body {
   letter-spacing: 0.2em;
 }
 
-
 .header-menu {
   position: relative;
   padding-top: 40px;
@@ -281,14 +258,12 @@ div.site-header-wrapper {
   position: relative;
   display: flex;
   align-items: flex-start;
-  /* width: 50%; */
   width: 440px;
   font-weight: 300;
   font-size: 15px;
   line-height: 30px;
   font-family: "Open Sans", "Verdana", sans-serif;
   letter-spacing: 0.01em;
-  /* margin-bottom: 22px; */
 }
 
 .main-search label:focus,
@@ -408,6 +383,7 @@ div.site-header-wrapper {
 
 .shopping-menu-item,
 .user-menu-item {
+  margin: 0;
   margin-right: 38px;
 }
 
@@ -456,6 +432,13 @@ div.site-header-wrapper {
   width: 12px;
   height: 12px;
   background-image: url("../img/icon/ico_cart.svg");
+}
+
+.navigation-menu li,
+.footer-navigation-menu li,
+.logistic-menu li,
+.contact-menu li {
+  margin: 0;
 }
 
 .drop-catalog {
@@ -561,7 +544,6 @@ div.site-header-wrapper {
 
 .site-footer-wrapper:last-of-type {
   justify-content: space-between;
-  /* margin-bottom: 66px; */
   align-items: center;
 }
 
@@ -617,6 +599,8 @@ div.site-header-wrapper {
 }
 
 .address-line {
+  display: block;
+  margin: 0;
   overflow-wrap: break-word;
 }
 
@@ -659,6 +643,7 @@ div.site-header-wrapper {
 }
 
 .footer-social li {
+  margin: 0;
   margin-right: 20px;
 }
 
@@ -805,6 +790,8 @@ div.site-header-wrapper {
 .promo-slogan {
   position: relative;
   z-index: 4;
+  display: block;
+  margin: 0;
   margin-bottom: 20px;
   font-weight: 800;
   font-size: 47px;
@@ -814,8 +801,11 @@ div.site-header-wrapper {
   letter-spacing: 0.01em;
 }
 
+
 .promo-line {
+  display: block;
   width: 490px;
+  margin: 0;
   margin-bottom: 42px;
   font-weight: 300;
   font-size: 15px;
@@ -823,6 +813,7 @@ div.site-header-wrapper {
   font-family: "Open Sans", "Verdana", sans-serif;
   letter-spacing: 0.01em;
 }
+
 
 .promo-details {
   margin-top: 49px;
@@ -873,7 +864,7 @@ div.site-header-wrapper {
 }
 
 /* ------------------------------- */
-/*  Стили для проверки слайдера    */
+/*  Стили для оживления слайдера   */
 /* ------------------------------- */
 #promo-btn-1:checked ~ .promo-controls .promo-label[for="promo-btn-1"]::before {
   z-index: 1;
@@ -889,7 +880,6 @@ div.site-header-wrapper {
 
 .promo-inner {
   overflow: hidden;
-  /* z-number: 2; */
 }
 
 .promo-wrapper {
@@ -924,6 +914,7 @@ div.site-header-wrapper {
 }
 
 .goodsgroups-item {
+  margin: 0;
   margin-left: 40px;
 }
 
@@ -953,6 +944,8 @@ div.site-header-wrapper {
 }
 
 .goodsgroups-item-line {
+  display: block;
+  margin: 0;
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
@@ -1073,7 +1066,6 @@ div.site-header-wrapper {
 
 .service-slide-title {
   margin: 0;
-  /* margin-top: 16px; */
   margin-bottom: 32px;
   font-weight: 800;
   font-size: 47px;
@@ -1084,7 +1076,9 @@ div.site-header-wrapper {
 }
 
 .service-info {
+  display: block;
   width: 437px;
+  margin: 0;
   font-weight: 300;
   font-size: 15px;
   line-height: 30px;
@@ -1134,6 +1128,7 @@ div.site-header-wrapper {
 }
 
 .brends-item {
+  margin: 0;
   margin-right: 40px;
 }
 
@@ -1213,11 +1208,12 @@ div.site-header-wrapper {
   left: 0;
   width: 80px;
   height: 7px;
-  background-color: #000000;
+  background-color: black;
 }
 
 .info-title,
 .contacts-title {
+  margin: 0;
   margin-bottom: 43px;
   margin-left: -2px;
   font-weight: 800;
@@ -1229,12 +1225,15 @@ div.site-header-wrapper {
 
 .info-line,
 .pickup-line {
+  display: block;
+  margin: 0;
   font-weight: 300;
   font-size: 15px;
   line-height: 30px;
   font-family: "Open Sans", "Verdana", sans-serif;
   color: rgb(70, 70, 70);
 }
+
 
 .shipping-companies-list {
   margin-bottom: 54px;
@@ -1246,10 +1245,8 @@ div.site-header-wrapper {
 
 .shipping-companies-list li {
   position: relative;
+  margin: 0;
   padding-left: 35px;
-  /* background-image: url("../img/mainpage/list-button.svg"); */
-  /* background-repeat: no-repeat; */
-  /* background-position: 0 50%; */
 }
 
 .shipping-companies-list li::before {
@@ -1355,6 +1352,7 @@ div.site-header-wrapper {
 
 .breadcrumbs-item {
   position: relative;
+  margin: 0;
   padding-right: 38px;
 }
 
@@ -1400,6 +1398,7 @@ div.site-header-wrapper {
 }
 
 .filters-title {
+  margin: 0;
   margin-bottom: 92px;
   padding-top: 23px;
   padding-left: 2px;
@@ -1430,6 +1429,12 @@ div.site-header-wrapper {
   line-height: 24px;
   font-family: "Gilroy", "Helvetica", sans-serif;
   letter-spacing: 0.01em;
+}
+
+.colors p,
+.bluetooth p {
+  display: block;
+  margin: 0;
 }
 
 .range-filter {
@@ -1658,6 +1663,7 @@ input[name="bluetooth"]:active + label {
 }
 
 .sorter-title {
+  margin: 0;
   margin-right: 40px;
   font-weight: 800;
   font-size: 16px;
@@ -1675,6 +1681,10 @@ input[name="bluetooth"]:active + label {
   padding: 0;
   padding-top: 3px;
   list-style: none;
+}
+
+.order-item {
+  margin: 0;
 }
 
 .order-item a {
@@ -1698,6 +1708,10 @@ input[name="bluetooth"]:active + label {
   padding: 0;
   list-style: none;
   font-size: 0;
+}
+
+.sorter-arrow {
+  margin: 0;
 }
 
 .sorter-arrow a {
@@ -1743,6 +1757,7 @@ input[name="bluetooth"]:active + label {
   align-content: flex-start;
   align-items: center;
   width: 360px;
+  margin: 0;
   margin-right: 40px;
   margin-bottom: 46px;
 }
@@ -1753,6 +1768,7 @@ input[name="bluetooth"]:active + label {
 
 .item-pic-wrapper {
   width: 100%;
+  min-height: 380px;
   margin-bottom: 32px;
   font-size: 0;
 }
@@ -1817,11 +1833,12 @@ input[name="bluetooth"]:active + label {
   letter-spacing: 0.01em;
 }
 
-.item-name {
+.item-name a {
   vertical-align: top;
 }
 
 .catalog-item .item-price {
+  display: block;
   align-self: flex-start;
   width: 100px;
   margin: 0;
@@ -1847,10 +1864,10 @@ input[name="bluetooth"]:active + label {
   line-height: 24px;
   font-family: "Gilroy Bold", "Helvetica", sans-serif;
   text-align: center;
-  color: #000000;
+  color: black;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  border: 2px solid #000000;
+  border: 2px solid black;
   border-radius: 50%;
   opacity: 0.2;
 }
@@ -1883,9 +1900,9 @@ input[name="bluetooth"]:active + label {
 
 .paginator-prev,
 .paginator-next {
-  padding-top: 23px;
+  padding-top: 24px;
   padding-right: 30px;
-  padding-bottom: 23px;
+  padding-bottom: 22px;
   padding-left: 30px;
   color: black;
 }
@@ -1909,14 +1926,15 @@ input[name="bluetooth"]:active + label {
 .paginator-list {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 23px;
+  padding-top: 24px;
   padding-right: 28px;
-  padding-bottom: 23px;
+  padding-bottom: 22px;
   padding-left: 28px;
 }
 
 .paginator-item {
   align-items: center;
+  margin: 0;
   margin-right: 28px;
   color: rgba(0, 0, 0, 0.3);
 }
@@ -2054,6 +2072,11 @@ input[name="bluetooth"]:active + label {
   background-color: white;
 }
 
+.feedback-item {
+  display: block;
+  margin: 0;
+}
+
 .feedback label {
   display: block;
   margin-bottom: 10px;
@@ -2176,7 +2199,6 @@ input[name="bluetooth"]:active + label {
   border: none;
 }
 
-/*===========================*/
 /* ------------------------------------ */
 /*  Стили для пропуска навигации        */
 /*  www.w3.org/TR/WCAG20-TECHS/G1.html  */

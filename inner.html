@@ -5,23 +5,12 @@
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-min.css">
 </head>
 
 <body class="inner-page">
 
   <header style="position:relative;" class="site-header container">
-
-    <div style="display:none">
-      <div class="ruler" style="position:absolute;width:1px;height:3000px; background-color: rgba(255,0,0,0.5);top:0;left:20px;z-index:999"></div>
-      <div class="ruler" style="position:absolute;width:1px;height:3000px; background-color: rgba(255,0,0,0.5);top:0;left:80px;z-index:999"></div>
-      <div class="ruler" style="position:absolute;width:1px;height:3000px; background-color: rgba(255,0,0,0.5);top:0;left:280px;z-index:999"></div>
-      <div class="ruler" style="position:absolute;width:1px;height:3000px; background-color: rgba(255,0,0,0.5);top:0;left:348px;z-index:999"></div>
-      <div class="ruler" style="position:absolute;width:1px;height:3000px; background-color: rgba(255,0,0,0.5);top:0;left:420px;z-index:999"></div>
-    </div>
-
-
-
     <h1 class="visually-hidden">Каталог товаров магазина электронных гаджетов <span lang="en">«Device»</span></h1>
     <a class="goto-main" href="#main-content">Пропустить навигацию</a>
 
@@ -38,7 +27,6 @@
           <ul class="user-menu logged" aria-label="Личный кабинет">
             <li class="user-menu-item account"><a href="https://htmlacademy.ru/profile/id642335" target="_blank">Валентин Петухов</a></li>
             <li class="user-menu-item logout"><a href="#">Выйти</a></li>
-
           </ul> <!-- user-menu -->
 
           <ul class="shopping-menu" aria-label="Отмеченные товары">
@@ -73,7 +61,7 @@
                   <li class="goodsgroup-menu-item"><a class="quadcopters-link" href="inner.html" role="menuitem">Квадрокоптеры</a></li>
                 </ul>
               </li>
-            </ul>
+            </ul> <!-- catalog-submenu -->
           </li>
         </ul>
 
@@ -187,7 +175,6 @@
 
           <h3 class="catalog-list visually-hidden">Выбранные товары:</h3>
           <ul class="catalog-list">
-
             <li class="catalog-item">
               <div class="item-pic-wrapper">
                 <img src="img/catalog/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
@@ -240,7 +227,6 @@
               </h4>
               <p class="item-price">4 500 руб.</p>
             </li>
-
           </ul> <!-- catalog-list -->
 
           <div class="paginator" aria-label="Листать страницы">

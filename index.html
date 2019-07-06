@@ -5,9 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
-
-
+  <link rel="stylesheet" href="css/style-min.css">
 </head>
 
 <body>
@@ -30,6 +28,7 @@
           <ul class="user-menu" aria-label="Личный кабинет">
             <li class="user-menu-item login"><a href="#">Войти</a></li>
           </ul> <!-- user-menu -->
+
           <ul class="shopping-menu" aria-label="Отмеченные товары">
             <li class="shopping-menu-item compare"><a href="#">Сравнить</a></li>
             <li class="shopping-menu-item cart"><a href="#">Корзина</a></li>
@@ -62,7 +61,7 @@
                   <li class="goodsgroup-menu-item"><a class="quadcopters-link" href="inner.html" role="menuitem">Квадрокоптеры</a></li>
                 </ul>
               </li>
-            </ul>
+            </ul> <!-- catalog-submenu -->
           </li>
         </ul>
 
@@ -82,6 +81,7 @@
   </header>
 
   <main class="main-page" id="main-content">
+
     <section class="promo-slider container" aria-roledescription="carousel">
       <h2 class="promo-title visually-hidden">Хиты</h2>
       <input class="visually-hidden" type="radio" id="promo-btn-1" name="promo-btn" aria-posinset="1" aria-setsize="3" checked>
@@ -231,8 +231,6 @@
           <label class="service-label btn" for="service-btn-3" tabindex="0">Кредит</label>
         </div>
 
-        <!-- <div class="service-inner"> -->
-        <!-- <div class="service-slide-wrapper"> -->
         <div class="service-slide delivery">
           <h3 class="service-slide-title">Доставка</h3>
           <p class="service-info">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
@@ -245,8 +243,7 @@
           <h3 class="service-slide-title">Кредит</h3>
           <p class="service-info">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
         </div>
-        <!-- </div> -->
-        <!-- </div> -->
+
       </div>
     </section> <!-- service-slider -->
 
@@ -297,6 +294,7 @@
         </div>
         <a class="btn feedback-link" href="#">Напишите нам</a>
       </section> <!-- contacts -->
+
     </div>
   </main>
 
@@ -341,7 +339,7 @@
       </div>
     </div>
   </footer>
-  <!-- https://www.w3.org/TR/html/editing.html#inert-subtrees -->
+
   <section class="modal feedback">
     <h2 class="visually-hidden">Написать отзыв</h2>
     <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">

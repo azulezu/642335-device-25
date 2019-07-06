@@ -458,7 +458,7 @@ div.site-header-wrapper {
 }
 
 .account a {
-  word-break: break-word;
+  word-wrap: break-word;
 }
 
 .navigation-menu li,
@@ -629,7 +629,7 @@ div.site-header-wrapper {
 .address-line {
   display: block;
   margin: 0;
-  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 .phone-uri {
@@ -1990,7 +1990,7 @@ input[name="bluetooth"]:active + label {
 }
 
 .paginator-item a {
-  vertical-align" top;
+  vertical-align: top;
 }
 
 /*===========================*/

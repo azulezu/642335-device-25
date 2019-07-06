@@ -3,13 +3,12 @@
       "extends": "../_conf/stylelint-config-htmlacademy",
       "rules": {
        "value-no-vendor-prefix": true,
-       "selector-max-id": 0,
-       "selector-max-specificity": ["0,2,0",
-           {ignoreSelectors: [":hover", ":focus", ":active", ":invalid",
-            /::before|::after"/, /^:first-|^:last-|^nth-/,
-            /.type=\"(text|email|checkbox|radio)\"./
-           ] }
-          ]
-
+       "selector-max-id": 1,
+       "selector-max-specificity": ["1,2,0",
+        {ignoreSelectors: [":hover", ":focus", ":active", ":invalid",
+          /::before|::after"/, /^:first-|^:last-|^nth-/,
+          /.type=\"(text|email|checkbox|radio)\"./]
+        }
+      ]
     }
 }
